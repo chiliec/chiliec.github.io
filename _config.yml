@@ -7,15 +7,15 @@ title: Владимир Бабин
 subtitle: Программист
 description:
 author: Владимир Бабин
-language:
+language: ru
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://babin.info
+url: https://babin.info
 root: /
-permalink: :title/
-permalink_defaults: post/
+permalink: post/:title/
+permalink_defaults:
 
 # Directory
 source_dir: source
