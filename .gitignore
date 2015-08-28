@@ -1,7 +1,8 @@
 DS_Store
-node_modules/
+/node_modules/
+/public/
 tmp/
 *.log
-.idea/
+/.idea/
 coverage/
 db.json
