@@ -10,6 +10,9 @@ author: Владимир Бабин
 language: ru
 timezone:
 
+# Disqus
+disqus_shortname: babininfo
+
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://babin.info

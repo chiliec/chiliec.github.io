@@ -1,4 +1,10 @@
 title: {{ title }}
 date: {{ date }}
-tags:
+updated: {{ date }}
+comments: true
+tags: []
+categories: []
+permalink:
 ---
+
+<!-- more -->

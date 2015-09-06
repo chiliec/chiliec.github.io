@@ -1,0 +1,8 @@
+User-agent: Mediapartners-Google*
+Disallow:
+
+User-agent: Yandex
+Host: babin.info
+
+User-agent: *
+Sitemap: https://babin.info/sitemap.xml
