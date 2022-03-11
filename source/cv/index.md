@@ -17,12 +17,18 @@ Vladimir Babin
 ### Pro IT
 <https://proitr.ru>
 
-Software developer (Febuary 2015 — Present time)
+Software developer (Febuary 2015 — October 2021)
 
 - iOS applications development
 - Web services development
 - Internal tools development
 - CI/CD automation
+
+#### Symplast
+
+Software developer (October 2021 - Present time)
+
+- iOS/MacOS applications development
 
 # Technical Skills
 
