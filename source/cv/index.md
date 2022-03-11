@@ -24,7 +24,8 @@ Software developer (Febuary 2015 — October 2021)
 - Internal tools development
 - CI/CD automation
 
-#### Symplast
+### Symplast
+<https://symplast.com>
 
 Software developer (October 2021 - Present time)
 
