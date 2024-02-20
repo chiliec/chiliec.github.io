@@ -3,18 +3,27 @@ title: Vladimir Babin
 date: 2021-08-28 00:20:57
 layout: cv
 ---
-Vladimir Babin
-===========
+
+# Vladimir Babin
 
 **email**: <vovababin@gmail.com>
 
-**website**: <https://babin.info>
+**website**: <https://chiliec.github.io>
 
 **telegram**: <https://t.me/babin>
 
 # Work Experience
 
+### Symplast
+
+<https://symplast.com>
+
+Software developer (October 2021 - November 2023)
+
+- iOS/MacOS applications development
+
 ### Pro IT
+
 <https://proitr.ru>
 
 Software developer (Febuary 2015 — October 2021)
@@ -24,20 +33,14 @@ Software developer (Febuary 2015 — October 2021)
 - Internal tools development
 - CI/CD automation
 
-### Symplast
-<https://symplast.com>
-
-Software developer (October 2021 - Present time)
-
-- iOS/MacOS applications development
-
 # Technical Skills
 
 - Swift and Objective-C
+- JavaScript/TypeScript
 - Java/Scala/Kotlin
+- Python
 - Go
 - Ruby
-- JavaScript
 - PHP
 
 # Tools

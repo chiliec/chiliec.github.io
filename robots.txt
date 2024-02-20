@@ -1,8 +1,5 @@
-User-agent: Mediapartners-Google*
-Disallow:
-
 User-agent: Yandex
-Host: babin.info
+Host: chiliec.github.io
 
 User-agent: *
-Sitemap: https://babin.info/sitemap.xml
+Sitemap: https://chiliec.github.io/sitemap.xml
