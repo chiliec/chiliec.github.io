@@ -1,6 +1,6 @@
 ---
 title: Vladimir Babin
-date: 2021-08-28 00:20:57
+date: 2024-02-21 23:22:21
 layout: cv
 ---
 
