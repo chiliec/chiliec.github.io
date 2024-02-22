@@ -35,18 +35,17 @@ Software developer (Febuary 2015 — October 2021)
 
 # Technical Skills
 
-- Swift and Objective-C
-- JavaScript/TypeScript
-- Java/Scala/Kotlin
-- Python
-- Go
-- Ruby
-- PHP
+- Swift
+- SwiftUI, UIKit, Foundation
+- Autolayout
+- Combine
+- GCD
 
 # Tools
 
 - Xcode
 - Fastlane
+- Swiftlint
 - Jira
 - Git
 
@@ -63,4 +62,4 @@ B.S., Applied Informatics at Perm State Agricultural Academy, 2014
 # Languages
 
 - Russian: native
-- English: intermediate
+- English: upper-intermediate
