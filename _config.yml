@@ -99,6 +99,13 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: landscape
 
+sitemap:
+  path:
+    - sitemap.xml
+  rel: false
+  tags: false
+  categories: true
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
