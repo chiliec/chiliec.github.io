@@ -43,6 +43,7 @@ jobs:
         run: |
           cd ./source/cv/
           rendercv render Vladimir_Babin_CV.yaml
+          cp -r rendercv_output/* ../../public/cv/
 
       - name: Set custom domain
         run: echo "babin.info" > ./public/CNAME
