@@ -1,0 +1,80 @@
+cv:
+  name: Vladimir Babin
+  email: vovababin@gmail.com
+  social_networks:
+    - network: GitHub
+      username: chiliec
+    - network: LinkedIn
+      username: vovababin
+
+  sections:
+    Summary:
+      - Experienced iOS Developer with 10+ years of building high-performance applications for iOS and macOS using Swift, SwiftUI, and UIKit. Strong in architecture design (MVVM, modular), performance optimization, and clean code practices. Proven track record delivering user-focused apps from concept to App Store. Proficient in Agile environments and cross-functional collaboration. Open to remote roles in product-driven teams.
+
+    Experience:
+      - company: Artwell
+        position: Software Developer
+        location: Remote
+        start_date: 2024-06
+        end_date: present
+        highlights:
+          - Developed a high-performance iOS app (Swift / SwiftUI) for blockchain and analytical data visualization.
+          - Integrated TON blockchain and smart contracts, including transaction parsing and on-chain state handling.
+          - Optimized data flows and UI performance for real-time updates under production load.
+          - Participated in architecture design with a focus on scalability and maintainability.
+
+      - company: Symplast
+        position: iOS/macOS Developer
+        location: Remote
+        start_date: 2021-10
+        end_date: 2024-05
+        highlights:
+          - Developed healthcare apps for iOS and macOS using Swift and Combine
+          - Migrated large Objective-C codebases to Swift modules, enhancing maintainability and testability
+          - Integrated advanced features including EHR access, secure messaging, video calls, and offline sync
+          - Led UI/UX improvements that increased app stability and reduced crash rates
+          - Worked with distributed US-based teams (PM, QA, Design) in Agile/Scrum sprints
+
+      - company: Pro IT
+        position: iOS Developer
+        location: Russia
+        start_date: 2015-02
+        end_date: 2021-10
+        highlights:
+          - Delivered multiple native iOS apps for enterprise and government clients
+          - Built reusable UI components with UIKit, Auto Layout, and Storyboards
+          - Automated build, test, and deployment processes using Fastlane and Git hooks
+          - Created internal tools and utilities in Clojure, Scala, Python, Go, Java, TypeScript, Ruby, and PHP
+          - Reviewed code, supported CI/CD pipelines, and mentored junior developers
+
+    Education:
+      - institution: Perm State Agricultural Academy
+        area: Applied Informatics
+        degree: B.S.
+        end_date: 2014
+
+    Technical Skills:
+      - label: Languages
+        details: Swift, Objective-C
+      - label: Frameworks
+        details: SwiftUI, UIKit, Combine, CoreData, Foundation
+      - label: Dev Tools
+        details: Xcode, Fastlane, Git, Postman, Charles, Firebase
+      - label: CI/CD
+        details: GitHub Actions, GitLab CI, Jenkins
+      - label: Mobile Expertise
+        details: App Architecture, REST APIs, Push Notifications, App Store Deployment
+      - label: Practices
+        details: Agile/Scrum, TDD, Clean Code, Performance Optimization
+
+    Languages:
+      - label: Russian
+        details: Native
+      - label: English
+        details: Upper-intermediate (B2)
+
+design:
+  theme: classic
+
+locale:
+  language: english

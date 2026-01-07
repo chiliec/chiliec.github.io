@@ -6,3 +6,4 @@ tmp/
 /.idea/
 coverage/
 db.json
+source/cv/rendercv_output/*

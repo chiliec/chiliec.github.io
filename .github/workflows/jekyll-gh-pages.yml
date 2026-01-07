@@ -1,10 +1,8 @@
 name: Pages
-
 on:
   push:
     branches:
       - master
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,6 +30,19 @@ jobs:
 
       - name: Build
         run: npm run build
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12'
+
+      - name: Install RenderCV
+        run: pip install "rendercv[full]"
+
+      - name: Render CV
+        run: |
+          cd ./source/cv/
+          rendercv render Vladimir_Babin_CV.yaml
 
       - name: Set custom domain
         run: echo "babin.info" > ./public/CNAME
