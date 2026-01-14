@@ -2,6 +2,8 @@ cv:
   name: Vladimir Babin
   email: vovababin@gmail.com
   social_networks:
+    - network: Telegram
+      username: babin
     - network: GitHub
       username: chiliec
     - network: LinkedIn
