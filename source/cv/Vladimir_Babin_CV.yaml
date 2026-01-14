@@ -9,42 +9,54 @@ cv:
 
   sections:
     Summary:
-      - Senior iOS/macOS Developer with 10+ years of experience. Specialized in Swift, SwiftUI, UIKit, app architecture (MVVM, modularization), and performance-critical UI for production applications.
+      - Senior iOS/macOS Developer with 10+ years of production experience building native Apple-platform applications.
+      - Expert in Swift, SwiftUI, UIKit, and iOS SDK.
+      - Strong background in app architecture (MVVM, Clean Architecture, modularization).
+      - Deep understanding of concurrency (GCD, Actors, Combine) and performance-critical UI.
+      - Experience integrating blockchain (TON) data and smart-contract state into mobile applications.
+      - Comfortable working in Agile/Scrum teams and production CI/CD environments.
 
     Experience:
-      - company: Artwell
-        position: iOS Developer
+      - company: "[Artwell](https://www.artwell.ru)"
+        position: Senior iOS Developer
         location: Remote
         start_date: 2024-06
         end_date: present
         highlights:
-          - Built and maintained a production iOS app using Swift and SwiftUI.
-          - Implemented real-time data rendering and state-driven UI updates.
-          - Integrated TON blockchain data and smart-contract state into the iOS app.
-          - Designed scalable app architecture with focus on performance and testability.
+          - Owned development of a production SwiftUI-based iOS application.
+          - Designed and implemented state-driven UI with real-time updates using Combine and async/await.
+          - Integrated TON blockchain data and smart-contract state into the app, including parsing on-chain data and handling async updates.
+          - Worked extensively with REST APIs and client-side data modeling.
+          - Collaborated in an Agile/Scrum environment with backend and product teams.
+          - Focused on performance optimization, memory usage, and UI responsiveness.
 
-      - company: Symplast
-        position: iOS/macOS Developer
+      - company: "[Symplast](https://symplast.com)"
+        position: Senior iOS/macOS Developer
         location: USA, Remote
         start_date: 2021-10
         end_date: 2024-05
         highlights:
-          - Developed and maintained production iOS and macOS healthcare applications.
-          - Migrated large Objective-C codebase to modular Swift architecture.
-          - Built reactive data flows using Combine.
-          - Implemented secure messaging, video calls, and offline-first data sync.
-          - Reduced crash rate and improved long-term stability of legacy code.
+          - Developed and maintained large-scale iOS and macOS healthcare applications with high reliability requirements.
+          - Led migration of a large Objective-C codebase (100k+ LoC) to modern Swift.
+          - Designed modular architecture using MVVM and Clean Architecture principles.
+          - Built reactive data pipelines with Combine, reducing UI-related bugs and race conditions.
+          - Implemented secure messaging, video calls, and offline-first synchronization.
+          - Actively used GCD, OperationQueue, and Swift Concurrency for complex async workflows.
+          - Reduced crash rate by ~40% through refactoring, monitoring, and defensive coding.
+          - Mentored junior developers and participated in code reviews and architectural decisions.
 
-      - company: Pro IT
+      - company: "[Pro IT](https://proitr.ru)"
         position: iOS Developer
         location: Russia
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Developed multiple native iOS applications using UIKit.
-          - Built reusable UI components and complex layouts.
-          - Automated build and release pipelines with Fastlane.
-          - Maintained CI/CD and improved release stability.
+          - Developed multiple production-grade native iOS applications using UIKit and Auto Layout.
+          - Built reusable UI components and adaptive layouts.
+          - Worked with networking layers using URLSession and Alamofire.
+          - Automated build, test, and release pipelines using Fastlane.
+          - Maintained CI/CD pipelines and improved release stability.
+          - Used Git daily and participated in Agile development processes.
 
     Education:
       - institution: Perm State Agricultural Academy
@@ -55,12 +67,26 @@ cv:
     Technical Skills:
       - label: Languages
         details: Swift, Objective-C
-      - label: Frameworks
-        details: SwiftUI, UIKit, Combine, SnapKit
-      - label: Dev Tools
-        details: Xcode, Fastlane, Charles, Git
+      - label: Apple Platforms
+        details: iOS, macOS, iOS SDK
+      - label: Apple Frameworks
+        details: SwiftUI, UIKit, Combine, Foundation
+      - label: Concurrency
+        details: GCD, Swift Concurrency (async/await, Actors)
+      - label: Architecture
+        details: MVVM, Clean Architecture, VIPER, OOP, modularization
+      - label: Networking
+        details: REST API integration, URLSession, Alamofire
+      - label: UI & Layout
+        details: Auto Layout, SnapKit, performance-critical UI
+      - label: Tooling
+        details: Xcode, Git, Fastlane, Charles
       - label: CI/CD
-        details: GitHub Actions, GitLab CI, Jenkins
+        details: CI/CD pipelines, GitHub Actions, GitLab CI, Jenkins
+      - label: Process
+        details: Agile, Scrum, Atlassian Jira
+      - label: Blockchain
+        details: TON blockchain, smart-contract data integration (client-side)
 
     Languages:
       - label: Russian
