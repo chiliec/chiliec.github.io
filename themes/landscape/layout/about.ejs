@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= page.title %></title>
+    <%- css('css/about') %>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><%= page.title %></h1>
+            <p class="tagline"><%= page.tagline %></p>
+        </header>
+
+        <div class="content">
+            <!-- About Section -->
+            <div class="section">
+                <h2><%= page.sections.about.title %></h2>
+                <p><%= page.sections.about.intro %></p>
+                <div class="highlight">
+                    <p><strong>My philosophy is simple:</strong> <%= page.sections.about.philosophy %></p>
+                </div>
+            </div>
+
+            <!-- What Drives Me Section -->
+            <div class="section">
+                <h2><%= page.sections.drives.title %></h2>
+                <% page.sections.drives.paragraphs.forEach(function(paragraph) { %>
+                    <p><%= paragraph %></p>
+                <% }); %>
+            </div>
+
+            <!-- Interests Section -->
+            <div class="section">
+                <h2><%= page.sections.interests.title %></h2>
+                <div class="interests">
+                    <% page.sections.interests.items.forEach(function(item) { %>
+                        <div class="interest-card">
+                            <h3><span class="emoji"><%= item.emoji %></span><%= item.name %></h3>
+                            <p><%= item.description %></p>
+                        </div>
+                    <% }); %>
+                </div>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="section">
+                <h2><%= page.sections.contact.title %></h2>
+                <div class="contact">
+                    <p style="margin-bottom: 20px;"><%= page.sections.contact.intro %></p>
+                    <div>
+                        <% page.sections.contact.links.forEach(function(link) { %>
+                            <a href="<%= link.url %>" <% if(link.target) { %>target="<%= link.target %>"<% } %>><%= link.name %></a>
+                        <% }); %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
