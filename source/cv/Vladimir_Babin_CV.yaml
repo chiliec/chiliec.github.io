@@ -23,7 +23,7 @@ cv:
         position: Senior iOS Developer
         location: Remote
         start_date: 2024-06
-        end_date: present
+        end_date: 2025-12
         highlights:
           - Owned development of a production SwiftUI-based iOS application.
           - Designed and implemented state-driven UI with real-time updates using Combine and async/await.
