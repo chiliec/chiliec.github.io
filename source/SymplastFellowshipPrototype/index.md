@@ -1,3 +1,8 @@
+---
+title: Proactive Patient Command Center
+date: 2026-03-02
+layout: empty
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
