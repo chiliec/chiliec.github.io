@@ -32,6 +32,7 @@ layout: empty
             <button onclick="hideKeyboard()">Hide Keyboard</button>
             <button onclick="enableKeyboard()">Enable</button>
             <button onclick="disableKeyboard()">Disable</button>
+            <button onclick="reloadPage()">Restart Page</button>
         </div>
         <input type="text" placeholder="Test input">
         <textarea placeholder="Test textarea"></textarea>
@@ -56,6 +57,7 @@ layout: empty
         async function hideKeyboard() { await navigator.virtualKeyboard.hide(); log('Hide called'); }
         async function enableKeyboard() { await navigator.virtualKeyboard.enable(); log('Enable called'); }
         async function disableKeyboard() { await navigator.virtualKeyboard.disable(); log('Disable called'); }
+        async function reloadPage() { window.location.reload(); log('Page reloaded'); }
     </script>
 </body>
 </html>
