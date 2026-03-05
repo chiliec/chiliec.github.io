@@ -48,7 +48,7 @@ jobs:
 
       - name: Copy resources
         run: |
-          cp -r resources/* ../../public/
+          cp -r ./resources/* ./public/
 
       - name: Set custom domain
         run: echo "babin.info" > ./public/CNAME
