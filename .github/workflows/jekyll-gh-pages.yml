@@ -46,6 +46,10 @@ jobs:
           cp -r rendercv_output/* ../../public/cv/
           cp Vladimir_Babin_CV.yaml ../../public/cv/
 
+      - name: Copy resources
+        run: |
+          cp -r resources/* ../../public/
+
       - name: Set custom domain
         run: echo "babin.info" > ./public/CNAME
 
