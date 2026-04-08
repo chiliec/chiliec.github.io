@@ -1,0 +1,11 @@
+# Mono theme — minimal Hexo theme for babin.info
+signature: babin.info
+
+menu:
+  home: /
+  about: /about/
+  cv: /cv/
+
+footer:
+  text: "© Vladimir Babin"
+  source_url: "https://github.com/chiliec/chiliec.github.io"

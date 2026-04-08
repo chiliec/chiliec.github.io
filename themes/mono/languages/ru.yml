@@ -1,0 +1,8 @@
+nav:
+  home: главная
+  about: обо мне
+  cv: cv
+post:
+  read_more: читать дальше
+footer:
+  source: исходники
