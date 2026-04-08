@@ -1,0 +1,8 @@
+<header class="site-header">
+  <a class="site-name" href="<%- url_for('/') %>"><%= theme.signature %></a>
+  <nav class="site-nav">
+    <% for (var label in theme.menu) { %>
+      <a href="<%- url_for(theme.menu[label]) %>"><%= label %></a>
+    <% } %>
+  </nav>
+</header>

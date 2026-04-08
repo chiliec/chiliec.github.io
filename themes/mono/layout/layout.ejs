@@ -4,6 +4,11 @@
     <%- partial('_partial/head') %>
   </head>
   <body>
-    <%- body %>
+    <div class="site-container">
+      <%- partial('_partial/header') %>
+      <main class="site-main">
+        <%- body %>
+      </main>
+    </div>
   </body>
 </html>
