@@ -1,0 +1,28 @@
+*, *::before, *::after
+  box-sizing border-box
+
+html, body
+  margin 0
+  padding 0
+
+body
+  background var(--bg)
+  color var(--fg)
+  font-family var(--font-body)
+  font-size 16px
+  line-height 1.65
+  -webkit-font-smoothing antialiased
+
+a
+  color var(--fg)
+  text-decoration underline
+  text-decoration-color var(--accent)
+  text-underline-offset 3px
+
+a:hover
+  color var(--accent)
+
+h1, h2, h3, h4, h5, h6
+  font-family var(--font-mono)
+  font-weight 700
+  line-height 1.3
