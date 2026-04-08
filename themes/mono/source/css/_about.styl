@@ -1,0 +1,88 @@
+.about-page
+  font-family var(--font-body)
+  font-size 17px
+  line-height 1.7
+
+.about-header
+  margin-bottom var(--space-xl)
+
+.about-tagline
+  font-family var(--font-mono)
+  font-size 12px
+  color var(--muted)
+  letter-spacing 0.04em
+  margin-top var(--space-xs)
+
+.about-section
+  margin-bottom var(--space-xl)
+
+.about-section h2
+  font-family var(--font-mono)
+  font-size 13px
+  text-transform lowercase
+  letter-spacing 0.02em
+  color var(--muted)
+  margin 0 0 var(--space-sm)
+  padding-bottom var(--space-xs)
+  border-bottom 1px dashed var(--rule)
+
+.about-section h2::before
+  content '# '
+  color var(--accent)
+
+.about-section p
+  margin 0 0 var(--space-md)
+
+.about-philosophy
+  color var(--muted)
+
+.interests-grid
+  list-style none
+  padding 0
+  margin 0
+  display grid
+  grid-template-columns repeat(2, 1fr)
+  gap var(--space-md)
+
+.interest
+  display grid
+  grid-template-columns 32px 1fr
+  grid-template-rows auto auto
+  column-gap var(--space-sm)
+  align-items baseline
+  font-family var(--font-mono)
+  font-size 12px
+
+.interest-emoji
+  grid-row 1 / 3
+  font-size 22px
+
+.interest-name
+  font-weight 700
+  color var(--fg)
+
+.interest-desc
+  color var(--muted)
+  font-size 11px
+
+.contact-links
+  list-style none
+  padding 0
+  margin 0
+  font-family var(--font-mono)
+  font-size 13px
+
+.contact-links li
+  margin-bottom var(--space-xs)
+
+.contact-links a
+  color var(--fg)
+  text-decoration none
+  border-bottom 1px solid var(--accent)
+
+.contact-links a:hover
+  color var(--accent)
+
+@media (max-width: 600px)
+  .interests-grid
+    grid-template-columns 1fr

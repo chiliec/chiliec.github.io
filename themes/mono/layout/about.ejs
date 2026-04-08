@@ -1,0 +1,60 @@
+<article class="about-page">
+  <header class="about-header">
+    <h1 class="post-title"><%= page.title %></h1>
+    <% if (page.tagline) { %>
+      <div class="about-tagline"><%= page.tagline %></div>
+    <% } %>
+  </header>
+
+  <% if (page.sections && page.sections.about) { %>
+    <section class="about-section">
+      <h2><%= page.sections.about.title %></h2>
+      <% if (page.sections.about.intro) { %>
+        <p><%= page.sections.about.intro %></p>
+      <% } %>
+      <% if (page.sections.about.philosophy) { %>
+        <p class="about-philosophy"><em><%= page.sections.about.philosophy %></em></p>
+      <% } %>
+    </section>
+  <% } %>
+
+  <% if (page.sections && page.sections.drives) { %>
+    <section class="about-section">
+      <h2><%= page.sections.drives.title %></h2>
+      <% (page.sections.drives.paragraphs || []).forEach(function(p) { %>
+        <p><%= p %></p>
+      <% }) %>
+    </section>
+  <% } %>
+
+  <% if (page.sections && page.sections.interests) { %>
+    <section class="about-section">
+      <h2><%= page.sections.interests.title %></h2>
+      <ul class="interests-grid">
+        <% (page.sections.interests.items || []).forEach(function(item) { %>
+          <li class="interest">
+            <span class="interest-emoji"><%= item.emoji %></span>
+            <span class="interest-name"><%= item.name %></span>
+            <span class="interest-desc"><%= item.description %></span>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+  <% } %>
+
+  <% if (page.sections && page.sections.contact) { %>
+    <section class="about-section">
+      <h2><%= page.sections.contact.title %></h2>
+      <% if (page.sections.contact.intro) { %>
+        <p><%= page.sections.contact.intro %></p>
+      <% } %>
+      <ul class="contact-links">
+        <% (page.sections.contact.links || []).forEach(function(link) { %>
+          <li>
+            <a href="<%= link.url %>"<% if (link.target) { %> target="<%= link.target %>" rel="noopener"<% } %>><%= link.name %></a>
+          </li>
+        <% }) %>
+      </ul>
+    </section>
+  <% } %>
+</article>
