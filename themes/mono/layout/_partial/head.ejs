@@ -6,6 +6,7 @@
 <% } %>
 <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
 <link rel="icon" href="<%- url_for('/favicon.png') %>">
+<link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%- url_for('/atom.xml') %>">
 <script>
   // Inline so it runs before paint and avoids a flash of wrong theme.
   (function () {
