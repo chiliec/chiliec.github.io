@@ -1,0 +1,86 @@
+// Inline code
+code
+  font-family var(--font-mono)
+  font-size 0.88em
+  background var(--code-bg)
+  padding 0.1em 0.35em
+  border-radius 2px
+  color var(--fg)
+
+pre
+  font-family var(--font-mono)
+
+// Hexo's highlight.js wrapper:
+//   <figure class="highlight LANG">
+//     <table>
+//       <tr>
+//         <td class="gutter"><pre><span class="line">1</span>...</pre></td>
+//         <td class="code"><pre><span class="line">...</span>...</pre></td>
+//       </tr>
+//     </table>
+//   </figure>
+figure.highlight
+  background var(--code-bg)
+  margin var(--space-md) 0
+  padding var(--space-sm) 0
+  border-radius 4px
+  border 1px solid var(--rule)
+  overflow auto
+  font-size 13px
+  line-height 1.55
+
+figure.highlight table
+  width 100%
+  border-collapse collapse
+
+figure.highlight td
+  padding 0
+  vertical-align top
+
+figure.highlight td.gutter
+  width 2.5em
+  user-select none
+  text-align right
+  padding-right var(--space-sm)
+  color var(--muted)
+  border-right 1px solid var(--rule)
+
+figure.highlight td.code
+  padding 0 var(--space-md)
+
+figure.highlight pre
+  margin 0
+  background transparent
+  white-space pre
+
+figure.highlight .line
+  display block
+  min-height 1.55em
+
+// Brutalist syntax palette — same in light and dark, contrast comes from --fg
+figure.highlight .keyword,
+figure.highlight .built_in,
+figure.highlight .literal
+  color var(--accent)
+
+figure.highlight .string,
+figure.highlight .meta-string
+  color var(--fg)
+  font-style italic
+
+figure.highlight .comment
+  color var(--muted)
+  font-style italic
+
+figure.highlight .number,
+figure.highlight .symbol
+  color var(--accent)
+
+figure.highlight .function .title,
+figure.highlight .title.function_
+  color var(--fg)
+  font-weight 700
+
+figure.highlight .attr,
+figure.highlight .params
+  color var(--fg)
