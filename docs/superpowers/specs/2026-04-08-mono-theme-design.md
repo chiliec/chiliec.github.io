@@ -21,7 +21,9 @@ Replace the existing `landscape` Hexo theme with a new minimal theme called **`m
 | Theme strategy | Replace entirely (new `themes/mono/`, leave `landscape` in repo) |
 | Aesthetic | Brutalist monospace |
 | Color modes | Light + dark, auto-detect via `prefers-color-scheme`, manual toggle persisted to `localStorage` |
-| Navigation | `home`, `cv` (Archive dropped — only 4 posts) |
+| Navigation | `home`, `about`, `cv` (Archive dropped — only 4 posts) |
+| About page | New `/about/` page rendering the structured frontmatter from current `source/index.md` (bio, interests grid, contact links). New `about.ejs` template. |
+| Homepage (`/`) | Pure post list. Current `source/index.md` is moved to `source/about/index.md` so `/` defaults to the index template. |
 | Homepage layout | Title-only list (date + title, no excerpts) |
 | Post page typography | Mono chrome (header/nav/dates/tags/code) + serif body (Georgia) |
 | Chrome font | JetBrains Mono, self-hosted woff2 (regular + bold) |
@@ -46,6 +48,7 @@ themes/mono/
 │   ├── index.ejs            # homepage: title-only post list
 │   ├── post.ejs             # single post page
 │   ├── page.ejs             # standalone pages (Symplast, 404)
+│   ├── about.ejs            # /about/ — bio, interests, contact (reads page.sections.*)
 │   ├── archive.ejs          # /archives/ — same template as index
 │   ├── tag.ejs              # /tags/<name>/ — filtered post list
 │   └── _partial/
@@ -78,6 +81,7 @@ themes/mono/
 - **`index.ejs`** — iterates `site.posts` (latest first), uses `post-meta.ejs` per item. No pagination needed at 4 posts; will respect `_config.yml`'s `per_page: 10` if it ever matters.
 - **`post.ejs`** — single post: title, meta line, body. No prev/next links (only 4 posts; not worth the visual weight).
 - **`page.ejs`** — for `source/404/`, `source/SymplastFellowshipPrototype/`, and any future standalone pages. Renders title + body inside the same shell.
+- **`about.ejs`** — for `/about/`. Reads structured data from `page.sections` (the existing frontmatter has `about`, `drives`, `interests`, `contact` sub-objects). Renders bio paragraphs, an interests grid (emoji + name + description), and contact links.
 - **`archive.ejs`** — same markup as `index.ejs`. Hexo generates `/archives/` and the dated drilldowns; we style them so direct links don't 404 visually, but they're not in the nav.
 - **`tag.ejs`** — same markup as `index.ejs`, just filtered. Page heading shows the tag name.
 
@@ -144,11 +148,10 @@ Hexo renders Markdown posts → applies the layout matching the post's `layout:`
 
 These are small enough not to need brainstorming, but flagged so they don't get missed:
 
-1. **`source/index.md` content** — currently exists. During implementation, read it and decide whether to delete it (homepage is purely the post list) or keep it as a header block above the list. If non-trivial, ask the user.
-2. **Theme toggle glyph** — pick during CSS work, easy to change.
-3. **Footer copy** — propose minimal text during implementation; user can override.
-4. **Exact JetBrains Mono source** — download from the official GitHub release (Apache 2.0), commit the two woff2 files into `themes/mono/source/fonts/`. Include license file alongside.
-5. **CV "back to site" link** — out of scope for this redesign. Noted as a possible follow-up: customize the RenderCV template to add a small link back to `/`. Tracked separately, not blocking.
+1. **Theme toggle glyph** — pick during CSS work, easy to change.
+2. **Footer copy** — propose minimal text during implementation; user can override.
+3. **Exact JetBrains Mono source** — download from the official GitHub release (Apache 2.0), commit the two woff2 files into `themes/mono/source/fonts/`. Include license file alongside.
+4. **CV "back to site" link** — out of scope for this redesign. Noted as a possible follow-up: customize the RenderCV template to add a small link back to `/`. Tracked separately, not blocking.
 
 ## Out of scope
 
