@@ -1,0 +1,14 @@
+<%
+  // `post` is passed in via partial(); fall back to `page` for the post page itself.
+  var p = locals.post || page;
+%>
+<span class="post-meta">
+  <time datetime="<%= date(p.date, 'YYYY-MM-DD') %>"><%= date(p.date, 'YYYY-MM-DD') %></time>
+  <% if (p.tags && p.tags.length) { %>
+    <span class="post-tags">
+      <% p.tags.each(function(tag) { %>
+        <a href="<%- url_for(tag.path) %>">#<%= tag.name %></a>
+      <% }) %>
+    </span>
+  <% } %>
+</span>

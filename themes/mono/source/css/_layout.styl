@@ -47,3 +47,47 @@
 
 .site-footer a:hover
   color var(--accent)
+
+.post-list
+  list-style none
+  padding 0
+  margin 0
+
+.post-list-item
+  display grid
+  grid-template-columns 130px 1fr
+  gap var(--space-md)
+  align-items baseline
+  padding var(--space-sm) 0
+  font-family var(--font-mono)
+  font-size 13px
+
+.post-list-title
+  text-decoration none
+  color var(--fg)
+  font-weight 600
+
+.post-list-title:hover
+  color var(--accent)
+
+.post-meta
+  font-family var(--font-mono)
+  font-size 11px
+  color var(--muted)
+  letter-spacing 0.02em
+
+.post-tags
+  margin-left var(--space-sm)
+
+.post-tags a
+  color var(--muted)
+  text-decoration none
+  margin-right var(--space-xs)
+
+.post-tags a:hover
+  color var(--accent)
+
+@media (max-width: 600px)
+  .post-list-item
+    grid-template-columns 1fr
+    gap var(--space-xs)
