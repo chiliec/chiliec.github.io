@@ -15,3 +15,29 @@
   --space-md 1rem
   --space-lg 1.5rem
   --space-xl 2.5rem
+
+@media (prefers-color-scheme: dark)
+  :root
+    --bg #15161a
+    --fg #d6d6d0
+    --accent #f08c70
+    --muted #6e6e76
+    --rule #2a2b30
+    --code-bg #1f2026
+
+// Manual override — wins over the media query
+:root[data-theme="light"]
+  --bg #f4f1ea
+  --fg #1a1a1a
+  --accent #c0392b
+  --muted #888888
+  --rule #d4cfbe
+  --code-bg #e8e3d3
+
+:root[data-theme="dark"]
+  --bg #15161a
+  --fg #d6d6d0
+  --accent #f08c70
+  --muted #6e6e76
+  --rule #2a2b30
+  --code-bg #1f2026

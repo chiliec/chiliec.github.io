@@ -6,3 +6,13 @@
 <% } %>
 <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
 <link rel="icon" href="<%- url_for('/favicon.png') %>">
+<script>
+  // Inline so it runs before paint and avoids a flash of wrong theme.
+  (function () {
+    var t = localStorage.getItem('theme');
+    if (t === 'light' || t === 'dark') {
+      document.documentElement.setAttribute('data-theme', t);
+    }
+  })();
+</script>
+<script defer src="<%- url_for('/js/theme-toggle.js') %>"></script>

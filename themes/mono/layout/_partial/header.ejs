@@ -4,5 +4,6 @@
     <% for (var label in theme.menu) { %>
       <a href="<%- url_for(theme.menu[label]) %>"><%= label %></a>
     <% } %>
+    <button type="button" class="theme-toggle" aria-label="toggle theme" aria-pressed="false">◐</button>
   </nav>
 </header>
