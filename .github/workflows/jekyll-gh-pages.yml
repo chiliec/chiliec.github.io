@@ -3,6 +3,10 @@ on:
   push:
     branches:
       - master
+env:
+  # Run JS actions on Node 24 to silence the Node 20 deprecation warning.
+  # Remove once the actions ship Node 24-based major versions upstream.
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 jobs:
   build:
     runs-on: ubuntu-latest
