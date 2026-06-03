@@ -1,5 +1,6 @@
 cv:
   name: Vladimir Babin
+  headline: "Senior Software Engineer — AI Systems & Apple Platforms"
   email: vovababin@gmail.com
   social_networks:
     - network: Telegram
@@ -11,14 +12,23 @@ cv:
 
   sections:
     Summary:
-      - Senior iOS/macOS Developer with 10+ years of production experience building native Apple-platform applications.
-      - Expert in Swift, SwiftUI, UIKit, and iOS SDK.
-      - Strong background in app architecture (MVVM, Clean Architecture, modularization).
-      - Deep understanding of concurrency (GCD, Actors, Combine) and performance-critical UI.
-      - Experience integrating blockchain (TON) data and smart-contract state into mobile applications.
-      - Comfortable working in Agile/Scrum teams and production CI/CD environments.
+      - Senior software engineer with 10+ years shipping production applications, now focused on AI systems — multi-agent workflows, LLM-powered backends, and voice AI.
+      - "Builds agentic systems on the Anthropic Claude API: tool use, multi-agent orchestration, structured outputs, and retrieval-augmented (RAG) pipelines."
+      - Brings production rigor from a decade of native Apple-platform work (Swift, SwiftUI, UIKit) — architecture, concurrency, performance — to AI product development.
+      - Experience integrating LLMs and on-chain (TON) blockchain data into real, end-to-end products.
+      - "Comfortable across the stack: API design/integration, async data pipelines, CI/CD, Agile teams."
 
     Experience:
+      - company: "[Axveer](https://axveer.com)"
+        position: AI Engineer
+        location: Bali, Indonesia
+        start_date: 2026-02
+        end_date: present
+        highlights:
+          - Build production multi-agent workflows on the Anthropic Claude API (tool use, orchestration, structured outputs) to automate business operations.
+          - Developed voice AI agents for 24/7 call answering and booking automation, integrating telephony with LLM-driven conversation flows.
+          - Built retrieval-augmented (RAG) backends to ground agent responses in client and domain data.
+          - Designed prompt and evaluation pipelines to improve agent reliability and reduce hallucinations.
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
         location: Remote
@@ -67,6 +77,8 @@ cv:
         end_date: 2014
 
     Technical Skills:
+      - label: AI / LLM
+        details: Anthropic Claude API, multi-agent orchestration, tool use & MCP, RAG, prompt engineering, voice AI
       - label: Languages
         details: Swift, Objective-C
       - label: Apple Platforms
