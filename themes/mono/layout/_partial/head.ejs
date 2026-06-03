@@ -4,8 +4,20 @@
 <% if (page.description || config.description) { %>
   <meta name="description" content="<%= page.description || config.description %>">
 <% } %>
+<link rel="canonical" href="<%= full_url_for(page.path) %>">
+
+<meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>">
+<meta property="og:site_name" content="<%= config.title %>">
+<meta property="og:title" content="<%= page.title || config.title %>">
+<meta property="og:description" content="<%= page.description || config.description %>">
+<meta property="og:url" content="<%= full_url_for(page.path) %>">
+<meta property="og:locale" content="<%= config.language %>">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="<%= page.title || config.title %>">
+<meta name="twitter:description" content="<%= page.description || config.description %>">
+
 <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
-<link rel="icon" href="<%- url_for('/favicon.png') %>">
+<link rel="icon" href="<%- url_for('/favicon.svg') %>" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%- url_for('/atom.xml') %>">
 <script>
   // Inline so it runs before paint and avoids a flash of wrong theme.
