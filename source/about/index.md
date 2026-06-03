@@ -7,7 +7,7 @@ tagline: Developer · Athlete · Musician
 sections:
   about:
     title: About
-    intro: iOS/macOS developer with 10+ years of experience. I work mostly with Swift and SwiftUI, focusing on clean architecture and usable interfaces. Outside of work, I switch context through sports and music.
+    intro: "Software engineer with 10+ years building production apps, now focused on AI systems — multi-agent workflows, LLM backends, and voice AI. A decade of native Apple-platform work (Swift, SwiftUI) underpins how I approach AI products: clean architecture and usable interfaces. Outside of work, I switch context through sports and music."
     philosophy: Curiosity, movement, continuous learning.
 
   drives:
@@ -54,6 +54,6 @@ sections:
         url: https://linkedin.com/in/vovababin
         target: _blank
       - name: CV
-        url: /cv
-        target: _self
+        url: /cv/Vladimir_Babin_CV.pdf
+        target: _blank
 ---
