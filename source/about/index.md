@@ -36,7 +36,7 @@ sections:
         description: Constant presence.
       - emoji: 💻
         name: Building things
-        description: Apps, tools, integrations.
+        description: Apps, agents, tools, integrations.
 
   contact:
     title: Contact
