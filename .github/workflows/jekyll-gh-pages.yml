@@ -7,18 +7,18 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: recursive
 
-      - name: Use Node.js 18.x
-        uses: actions/setup-node@v3
+      - name: Use Node.js 20.x
+        uses: actions/setup-node@v4
         with:
-          node-version: "18"
+          node-version: "20"
 
       - name: Cache NPM dependencies
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: node_modules
           key: ${{ runner.OS }}-npm-cache
@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Set up Python 3.12
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.12'
 
@@ -49,9 +49,6 @@ jobs:
       - name: Copy resources
         run: |
           cp -r ./resources/* ./public/
-
-      - name: Set custom domain
-        run: echo "babin.info" > ./public/CNAME
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
