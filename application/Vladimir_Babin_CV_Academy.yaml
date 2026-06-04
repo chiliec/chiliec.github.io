@@ -13,7 +13,7 @@ cv:
   sections:
     Summary:
       - 10+ years shipping native iOS and macOS software, now an AI engineer building multi-agent and voice AI systems — based in Bali, Indonesia.
-      - "Applying to the Apple Developer Academy to make the jump from engineer-for-hire to product creator: building AI-native Apple products (see TalkNative, built on Apple Foundation Models) through Challenge-Based Learning and interdisciplinary teamwork."
+      - "Applying to the Apple Developer Academy to make the jump from engineer-for-hire to product creator — building AI-native Apple products like TalkNative through Challenge-Based Learning and interdisciplinary teamwork."
       - Self-taught my whole career; the Academy's structured, community-driven format is how I want to grow next — while putting down roots in Indonesia's tech community.
 
     Experience:
@@ -24,8 +24,8 @@ cv:
         end_date: present
         highlights:
           - Build production multi-agent workflows on the Anthropic Claude API (tool use, orchestration, structured outputs) to automate business operations.
-          - Developed voice AI agents for 24/7 call answering and booking automation, integrating telephony with LLM-driven conversation flows.
-          - Built retrieval-augmented (RAG) backends and evaluation pipelines to ground agents in client data and reduce hallucinations.
+          - Develop voice AI agents for 24/7 call answering and booking automation, integrating telephony with LLM-driven conversation flows.
+          - Build retrieval-augmented (RAG) backends and evaluation pipelines to ground agents in client data and reduce hallucinations.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
@@ -58,7 +58,7 @@ cv:
 
     Personal Projects (see portfolio):
       - label: TalkNative
-        details: On-device iOS text enhancer on Apple Foundation Models (iOS 26) — private by design
+        details: On-device iOS text enhancer built on Apple Foundation Models (iOS 26 beta) — all processing stays on the phone
       - label: Indonesian Conversation Bot
         details: Voice role-play Telegram bot for Bali expats learning Bahasa Indonesia (Claude, Deepgram, Google TTS)
       - label: ClaudeBar
