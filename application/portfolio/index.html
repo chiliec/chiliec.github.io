@@ -34,7 +34,232 @@
   </div>
 </section>
 
-<!-- ===================== PROJECT PAGES INSERTED HERE (Task 5) ===================== -->
+<!-- ===================== 01 TALKNATIVE ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">01 / 05</div>
+    <h1>TalkNative</h1>
+    <div class="type"><strong>Self-initiated</strong> · solo · work in progress</div>
+  </div>
+  <div class="cols">
+    <div class="col-text">
+      <p class="summary">An on-device iOS text enhancer that helps non-native English speakers
+      polish their writing — built on Apple Foundation Models (iOS 26), so nothing they write
+      ever leaves their phone.</p>
+      <div class="block">
+        <h2>Impact</h2>
+        <ul>
+          <li>Private by design: zero servers, zero accounts — the entire enhancement pipeline runs on-device via Apple Intelligence.</li>
+          <li>Modular architecture: four independent Swift packages (EnhancerCore, PresetKit, HistoryKit, EnhancerUI), each with its own test suite.</li>
+          <li>Invoked from any app through a Share extension — meet users where they already write.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>What I learned</h2>
+        <ul>
+          <li>Adopting a framework weeks after announcement, with WWDC sessions as the only documentation — no Stack Overflow safety net.</li>
+          <li>Scoping honestly: v1 ships with the Share extension; in-place text replacement is deferred to v1.1 rather than blocking release.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <a href="https://github.com/chiliec">github.com/chiliec</a>
+      </div>
+    </div>
+    <div class="col-images">
+      <img src="images/talknative-1.png" alt="TalkNative — enhancement flow">
+      <img src="images/talknative-2.png" alt="TalkNative — presets">
+      <div class="caption">Running on iOS 26 simulator — Apple Foundation Models</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 02 INDONESIAN BOT ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">02 / 05</div>
+    <h1>Indonesian Conversation Bot</h1>
+    <div class="type"><strong>Self-initiated</strong> · solo · live</div>
+  </div>
+  <div class="cols">
+    <div class="col-text">
+      <p class="summary">A Telegram bot that helps English-speaking Bali expats practice Bahasa
+      Indonesia through scenario role-play — a Claude-powered conversation partner that listens
+      and talks back in text and voice.</p>
+      <div class="block">
+        <h2>Impact</h2>
+        <ul>
+          <li>Built while learning the language myself — every scenario (warung, gojek, immigration office) comes from my own life in Bali.</li>
+          <li>Full voice loop: Deepgram speech-to-text → Claude Sonnet as conversation partner → Google Cloud TTS speaking Indonesian back.</li>
+          <li>A second, lightweight model (Haiku) corrects grammar and pronunciation without breaking the conversation flow.</li>
+          <li>Monetized with Telegram Stars — real users paying real money.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>What I learned</h2>
+        <ul>
+          <li>Designing for learners: corrections must encourage, not interrupt — tone is a product feature.</li>
+          <li>A two-model architecture balances cost, latency, and quality better than one big model doing everything.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <a href="https://github.com/chiliec">github.com/chiliec</a>
+      </div>
+    </div>
+    <div class="col-images">
+      <img src="images/indonesian-1.png" alt="Indonesian bot — voice role-play">
+      <img src="images/indonesian-2.png" alt="Indonesian bot — corrections">
+      <div class="caption">Scenario role-play with voice replies and gentle corrections</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 03 CLAUDEBAR ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">03 / 05</div>
+    <h1>ClaudeBar</h1>
+    <div class="type"><strong>Self-initiated</strong> · solo · shipped</div>
+  </div>
+  <div class="cols">
+    <div class="col-text">
+      <p class="summary">A native macOS menu bar app that shows your Claude.ai usage at a glance —
+      so you know how close you are to your limits before you hit them.</p>
+      <div class="block">
+        <h2>Impact</h2>
+        <ul>
+          <li>Shipped and publicly distributed through my own Homebrew tap (<code>brew install chiliec/tap/claudebar</code>).</li>
+          <li>Scratched my own itch, then found other users with the same one — open source on GitHub.</li>
+          <li>Small, native, fast: pure Swift, lives quietly in the menu bar.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>What I learned</h2>
+        <ul>
+          <li>The full indie distribution path outside the App Store: signing, notarization, Homebrew tap, release automation.</li>
+          <li>A small scope you actually ship beats a big scope you don't.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <a href="https://github.com/chiliec/ClaudeBar">github.com/chiliec/ClaudeBar</a>
+      </div>
+    </div>
+    <div class="col-images">
+      <img src="images/claudebar-1.png" alt="ClaudeBar in the macOS menu bar">
+      <div class="caption">Usage at a glance, in the menu bar</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 04 VOICE AI ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">04 / 05</div>
+    <h1>Voice AI Agents at Axveer</h1>
+    <div class="type"><strong>Group project</strong> · work · my role: AI Engineer</div>
+  </div>
+  <div class="cols">
+    <div class="col-text">
+      <p class="summary">Voice AI agents that answer business phone calls 24/7 and book
+      appointments — telephony wired to LLM-driven conversation flows, grounded in each
+      client's data with retrieval (RAG).</p>
+      <div class="block">
+        <h2>Impact (my role)</h2>
+        <ul>
+          <li>Designed and built the LLM conversation flows and the RAG backend that grounds agent answers in client data.</li>
+          <li>Built evaluation pipelines that measurably reduced hallucinations — reliability as an engineering discipline, not luck.</li>
+          <li>Businesses stop missing calls: the agent answers, books, and hands off gracefully when humans are needed.</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>What I learned</h2>
+        <ul>
+          <li>Live phone calls are the harshest LLM environment: latency budgets, interruptions, accents — every weakness is audible.</li>
+          <li>Evals before features: you can't improve what you don't measure.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <a href="https://axveer.com">axveer.com</a>
+      </div>
+    </div>
+    <div class="col-images">
+      <svg class="diagram" viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+        <defs>
+          <marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 z" fill="#6e6e73"/>
+          </marker>
+        </defs>
+        <rect x="130" y="16" width="140" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="200" y="42" text-anchor="middle" font-size="14" fill="#1d1d1f">📞 Caller</text>
+        <rect x="130" y="100" width="140" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="200" y="126" text-anchor="middle" font-size="13" fill="#1d1d1f">Telephony gateway</text>
+        <rect x="40" y="190" width="140" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="110" y="216" text-anchor="middle" font-size="13" fill="#1d1d1f">Speech-to-text</text>
+        <rect x="220" y="190" width="140" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="290" y="216" text-anchor="middle" font-size="13" fill="#1d1d1f">Text-to-speech</text>
+        <rect x="100" y="290" width="200" height="56" rx="8" fill="#004f90"/>
+        <text x="200" y="313" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">LLM Agent (Claude)</text>
+        <text x="200" y="332" text-anchor="middle" font-size="11" fill="#cfe2f3">conversation flows · tool use</text>
+        <rect x="30" y="400" width="160" height="50" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="110" y="421" text-anchor="middle" font-size="13" fill="#1d1d1f">RAG knowledge base</text>
+        <text x="110" y="438" text-anchor="middle" font-size="10" fill="#6e6e73">client &amp; domain data</text>
+        <rect x="210" y="400" width="160" height="50" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="290" y="421" text-anchor="middle" font-size="13" fill="#1d1d1f">Booking system</text>
+        <text x="290" y="438" text-anchor="middle" font-size="10" fill="#6e6e73">calendar · CRM</text>
+        <rect x="100" y="480" width="200" height="30" rx="8" fill="none" stroke="#004f90" stroke-dasharray="4 3"/>
+        <text x="200" y="500" text-anchor="middle" font-size="11" fill="#004f90">evaluation pipeline — every call scored</text>
+        <line x1="200" y1="60" x2="200" y2="98" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="160" y1="144" x2="118" y2="188" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="282" y1="188" x2="240" y2="146" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="115" y1="234" x2="160" y2="288" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="240" y1="288" x2="285" y2="236" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="145" y1="346" x2="115" y2="398" stroke="#6e6e73" marker-end="url(#arr)"/>
+        <line x1="255" y1="346" x2="285" y2="398" stroke="#6e6e73" marker-end="url(#arr)"/>
+      </svg>
+      <div class="caption">Architecture (no client screenshots — NDA)</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 05 SYMPLAST ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">05 / 05</div>
+    <h1>Symplast</h1>
+    <div class="type"><strong>Group project</strong> · work · my role: Senior iOS/macOS Developer</div>
+  </div>
+  <div class="cols">
+    <div class="col-text">
+      <p class="summary">A healthcare platform for plastic-surgery clinics in the US — patient
+      messaging, video consultations, and clinic operations across iOS and macOS.</p>
+      <div class="block">
+        <h2>Impact (my role)</h2>
+        <ul>
+          <li>Led the migration of a 100k+ line Objective-C codebase to modern Swift — while the product kept shipping.</li>
+          <li>Cut the crash rate by ~40% through refactoring, monitoring, and defensive engineering.</li>
+          <li>Built secure messaging, video calls, and offline-first synchronization for clinical environments.</li>
+          <li>Mentored junior developers; drove architecture reviews (MVVM, Clean Architecture).</li>
+        </ul>
+      </div>
+      <div class="block">
+        <h2>What I learned</h2>
+        <ul>
+          <li>How to evolve a large production system without stopping the ship — migration as a marathon of safe, boring steps.</li>
+          <li>Healthcare sets the reliability bar: a crash isn't an inconvenience, it's a clinic that can't see its patients.</li>
+          <li>Mentoring sharpened my own architectural judgment more than any solo work.</li>
+        </ul>
+      </div>
+      <div class="links">
+        <a href="https://symplast.com">symplast.com</a> ·
+        <a href="https://apps.apple.com/us/app/symplast/id1108722774">App Store</a>
+      </div>
+    </div>
+    <div class="col-images">
+      <img src="images/symplast-1.png" alt="Symplast on the App Store">
+      <img src="images/symplast-2.png" alt="Symplast — patient messaging">
+      <div class="caption">Public App Store screenshots</div>
+    </div>
+  </div>
+</section>
 
 <!-- ===================== CLOSING ===================== -->
 <section class="page cover">
