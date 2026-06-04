@@ -50,6 +50,7 @@ body {
 .block ul { list-style: none; }
 .block li { padding-left: 4mm; position: relative; margin-bottom: 1.5mm; }
 .block li::before { content: "—"; position: absolute; left: 0; color: var(--muted); }
+code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
 
 .links { margin-top: auto; padding-top: 4mm; border-top: 0.4pt solid var(--rule); font-size: 9pt; }
 .links a { color: var(--accent); text-decoration: none; margin-right: 6mm; }
