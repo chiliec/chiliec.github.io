@@ -66,9 +66,51 @@
       </div>
     </div>
     <div class="col-images">
-      <img src="images/talknative-1.png" alt="TalkNative — enhancement flow">
-      <img src="images/talknative-2.png" alt="TalkNative — presets">
-      <div class="caption">Running on iOS 26 simulator — Apple Foundation Models</div>
+      <svg class="diagram" viewBox="0 0 400 520" xmlns="http://www.w3.org/2000/svg" font-family="Helvetica, Arial, sans-serif">
+        <defs>
+          <marker id="arr2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+            <path d="M0,0 L6,3 L0,6 z" fill="#6e6e73"/>
+          </marker>
+        </defs>
+        <!-- source text -->
+        <rect x="100" y="16" width="200" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="200" y="36" text-anchor="middle" font-size="13" fill="#1d1d1f">Any app — selected text</text>
+        <text x="200" y="52" text-anchor="middle" font-size="10" fill="#6e6e73">Mail, Notes, Safari, Slack…</text>
+        <!-- share extension -->
+        <rect x="100" y="100" width="200" height="40" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="200" y="124" text-anchor="middle" font-size="13" fill="#1d1d1f">Share extension</text>
+        <!-- foundation models -->
+        <rect x="70" y="180" width="260" height="56" rx="8" fill="#004f90"/>
+        <text x="200" y="203" text-anchor="middle" font-size="14" fill="#fff" font-weight="bold">Apple Foundation Models</text>
+        <text x="200" y="222" text-anchor="middle" font-size="11" fill="#cfe2f3">on-device LLM · iOS 26 beta</text>
+        <!-- presets -->
+        <rect x="40" y="276" width="150" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="115" y="294" text-anchor="middle" font-size="12" fill="#1d1d1f">Tone presets</text>
+        <text x="115" y="310" text-anchor="middle" font-size="10" fill="#6e6e73">formal · friendly · concise</text>
+        <!-- result -->
+        <rect x="210" y="276" width="150" height="44" rx="8" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="285" y="294" text-anchor="middle" font-size="12" fill="#1d1d1f">Polished text</text>
+        <text x="285" y="310" text-anchor="middle" font-size="10" fill="#6e6e73">history kept locally</text>
+        <!-- privacy -->
+        <rect x="70" y="356" width="260" height="32" rx="8" fill="none" stroke="#004f90" stroke-dasharray="4 3"/>
+        <text x="200" y="376" text-anchor="middle" font-size="11" fill="#004f90">0 servers · 0 accounts · nothing leaves the device</text>
+        <!-- packages -->
+        <text x="200" y="424" text-anchor="middle" font-size="10" fill="#6e6e73" letter-spacing="2">FOUR SWIFT PACKAGES, EACH WITH ITS OWN TEST SUITE</text>
+        <rect x="22" y="438" width="86" height="30" rx="6" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="65" y="457" text-anchor="middle" font-size="10" fill="#1d1d1f">EnhancerCore</text>
+        <rect x="116" y="438" width="80" height="30" rx="6" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="156" y="457" text-anchor="middle" font-size="10" fill="#1d1d1f">PresetKit</text>
+        <rect x="204" y="438" width="80" height="30" rx="6" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="244" y="457" text-anchor="middle" font-size="10" fill="#1d1d1f">HistoryKit</text>
+        <rect x="292" y="438" width="86" height="30" rx="6" fill="#f5f5f7" stroke="#d2d2d7"/>
+        <text x="335" y="457" text-anchor="middle" font-size="10" fill="#1d1d1f">EnhancerUI</text>
+        <!-- arrows -->
+        <line x1="200" y1="60" x2="200" y2="98" stroke="#6e6e73" marker-end="url(#arr2)"/>
+        <line x1="200" y1="140" x2="200" y2="178" stroke="#6e6e73" marker-end="url(#arr2)"/>
+        <line x1="150" y1="236" x2="120" y2="274" stroke="#6e6e73" marker-end="url(#arr2)"/>
+        <line x1="250" y1="236" x2="280" y2="274" stroke="#6e6e73" marker-end="url(#arr2)"/>
+      </svg>
+      <div class="caption">v1 architecture — on-device enhancement pipeline (work in progress)</div>
     </div>
   </div>
 </section>
@@ -82,9 +124,9 @@
   </div>
   <div class="cols">
     <div class="col-text">
-      <p class="summary">A Telegram bot that helps English-speaking Bali expats practice Bahasa
-      Indonesia through scenario role-play — a Claude-powered conversation partner that listens
-      and talks back in text and voice.</p>
+      <p class="summary">A Telegram bot that helps Bali expats practice Bahasa Indonesia through
+      scenario role-play — a Claude-powered conversation partner that listens and talks back
+      in text and voice.</p>
       <div class="block">
         <h2>Impact</h2>
         <ul>
@@ -106,9 +148,9 @@
       </div>
     </div>
     <div class="col-images">
-      <img src="images/indonesian-1.png" alt="Indonesian bot — voice role-play">
-      <img src="images/indonesian-2.png" alt="Indonesian bot — corrections">
-      <div class="caption">Scenario role-play with voice replies and gentle corrections</div>
+      <img src="images/indonesian-1.png" alt="Bahasa Buddy — scenario menu and Telegram Stars subscription">
+      <img src="images/indonesian-2.png" alt="Bahasa Buddy — voice messages and comprehension quizzes">
+      <div class="caption">Scenario menu with Telegram Stars subscription · voice practice with comprehension quizzes</div>
     </div>
   </div>
 </section>
@@ -254,9 +296,9 @@
       </div>
     </div>
     <div class="col-images">
-      <img src="images/symplast-1.png" alt="Symplast on the App Store">
-      <img src="images/symplast-2.png" alt="Symplast — patient messaging">
-      <div class="caption">Public App Store screenshots</div>
+      <img src="images/symplast-1.png" alt="Symplast on iPad — AI-assisted consultation notes">
+      <img src="images/symplast-2.png" alt="Symplast on iPad — patient billing and estimates">
+      <div class="caption">Symplast on iPad — AI-assisted consultation notes and patient billing (demo data)</div>
     </div>
   </div>
 </section>
