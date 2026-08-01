@@ -7,13 +7,13 @@ tagline: Developer · Athlete · Musician
 sections:
   about:
     title: About
-    intro: "Software engineer with 10+ years building production apps, now focused on AI systems — multi-agent workflows, LLM backends, and voice AI. A decade of native Apple-platform work (Swift, SwiftUI) underpins how I approach AI products: clean architecture and usable interfaces. Outside of work, I switch context through sports and music."
+    intro: "iOS and macOS engineer with 10+ years shipping production Apple software — healthcare platforms used in clinics, fintech, blockchain products. Swift, SwiftUI, UIKit. I care about the parts users never see: architecture that survives change, concurrency that doesn't race, crash rates that go down. Lately I've been shipping my own apps too, including one that runs entirely on-device on Apple Intelligence. Outside of work, I switch context through sports and music."
     philosophy: Curiosity, movement, continuous learning.
 
   drives:
     title: What Drives Me
     paragraphs:
-      - I enjoy turning ideas into reliable products people actually use. Code is a tool, not a goal.
+      - "I enjoy turning ideas into reliable products people actually use. Code is a tool, not a goal. A few of them are written up in my [portfolio](/portfolio/)."
       - Physical activity is not a hobby but a requirement. It keeps thinking sharp and decisions cleaner.
 
   interests:
