@@ -11,4 +11,4 @@ source/cv/rendercv_output/*
 .claude/*
 /.venv/
 /out/
-/scripts/node_modules/
+/build-tools/node_modules/

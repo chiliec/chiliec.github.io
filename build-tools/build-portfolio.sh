@@ -4,12 +4,12 @@ set -euo pipefail
 cd "$(dirname "$0")/.."
 mkdir -p out
 
-if [ ! -d scripts/node_modules ]; then
+if [ ! -d build-tools/node_modules ]; then
   echo "Installing build dependencies (one-time, downloads Chromium)…"
-  (cd scripts && npm install)
+  (cd build-tools && npm install)
 fi
 
-node scripts/print-portfolio.js
+node build-tools/print-portfolio.js
 
 PDF=out/VladimirBabin_Portfolio.pdf
 
