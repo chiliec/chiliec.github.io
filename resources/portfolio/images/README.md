@@ -11,4 +11,4 @@ Real screenshots, captured 2026-06-04.
 TalkNative uses an inline SVG architecture diagram in `index.html` rather than
 screenshots — the app is work in progress and has no shippable UI.
 
-To swap an image: replace the file, keep the filename, re-run `../../../scripts/build-portfolio.sh`.
+To swap an image: replace the file, keep the filename, re-run `../../../build-tools/build-portfolio.sh`.
