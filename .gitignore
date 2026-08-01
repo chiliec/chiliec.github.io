@@ -9,6 +9,7 @@ db.json
 source/cv/rendercv_output/*
 /.superpowers/
 .claude/*
+/.venv/
 /application/out/
 /application/.venv/
 /application/rendercv_output/
