@@ -12,4 +12,3 @@ source/cv/rendercv_output/*
 /.venv/
 /out/
 /scripts/node_modules/
-/.venv/
