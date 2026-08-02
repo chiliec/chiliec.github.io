@@ -19,14 +19,13 @@ cv:
 
     Experience:
       - company: Independent
-        position: Senior iOS/macOS Engineer (Contract)
-        location: Bali, Indonesia
+        position: Senior iOS/macOS Engineer
+        location: Remote
         start_date: 2026-02
         end_date: present
         highlights:
-          - Built and shipped ClaudeBar, a native macOS menu-bar app, distributed publicly through my own Homebrew tap.
-          - Built TalkNative, an iOS app running entirely on-device on Apple's Foundation Models, structured as four independent Swift packages.
-          - "Delivered production AI systems on contract for [Axveer](https://axveer.com) — voice agents and multi-agent workflows on the Anthropic Claude API."
+          - Built and shipped ClaudeBar, a native macOS menu-bar app in pure Swift — signed, notarized, and distributed publicly through my own Homebrew tap.
+          - Built TalkNative, an iOS app structured as four independent Swift packages, each with its own test suite.
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
         location: Remote
@@ -45,7 +44,6 @@ cv:
         highlights:
           - "Built and maintained large-scale iOS/macOS healthcare apps used daily in US plastic-surgery clinics — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
           - Reduced crash rate by ~40% through refactoring, monitoring, and defensive coding.
-          - Led migration of a 100k+ LoC Objective-C codebase to modern Swift, introducing modular MVVM/Clean Architecture.
           - Built reactive data pipelines (Combine, Swift Concurrency, GCD) that cut UI bugs and race conditions.
           - Implemented secure messaging, video calls, and offline-first synchronization.
           - Mentored junior developers and drove code reviews and architectural decisions.
