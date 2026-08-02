@@ -57,14 +57,6 @@ cv:
           - Shipped multiple production native iOS apps (UIKit, Auto Layout), building reusable UI components and REST networking layers (URLSession, Alamofire).
           - Automated build, test, and release pipelines with Fastlane, improving release stability.
 
-    Selected Projects:
-      - name: "[TalkNative](https://github.com/chiliec/TalkNative)"
-        summary: "Privacy-first iOS writing enhancer running entirely on-device via Apple Foundation Models. Modular across four Swift packages (SPM), each with its own test suite; invoked from any app through a Share extension."
-      - name: "[ClaudeBar](https://github.com/chiliec/ClaudeBar)"
-        summary: "Native macOS menu-bar app in pure Swift. Open source, signed and notarized, distributed through my own Homebrew tap (brew install chiliec/tap/claudebar)."
-      - name: "[Portfolio](https://chiliec.github.io/portfolio/)"
-        summary: "Case studies on Symplast, TalkNative, and ClaudeBar — architecture decisions, trade-offs, and screenshots."
-
     Education:
       - institution: Perm State Agricultural Academy
         area: Applied Informatics
