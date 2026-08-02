@@ -1,7 +1,7 @@
 cv:
   name: Vladimir Babin
-  headline: "Senior iOS/macOS Engineer — Swift, SwiftUI, On-Device AI"
-  location: Bali, Indonesia — open to remote (US/EU overlap) and relocation
+  headline: "Senior iOS/macOS Engineer — Swift, SwiftUI, UIKit"
+  location: Remote
   email: vovababin@gmail.com
   website: https://chiliec.github.io
   social_networks:
@@ -15,8 +15,7 @@ cv:
   sections:
     Summary:
       - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, fintech, and blockchain products. Swift, SwiftUI, UIKit, Swift Concurrency.
-      - "Strong on hard production problems: led a 100k+ LoC Objective-C → Swift migration without pausing releases, and cut crash rate ~40% in a clinical-reliability product."
-      - Ships independently — a native macOS app distributed through my own Homebrew tap, and an iOS app running entirely on-device on Apple's Foundation Models.
+      - Cut crash rate ~40% in a clinical-reliability healthcare product used daily in US clinics; ships independently — a native macOS app distributed through my own Homebrew tap.
 
     Experience:
       - company: Independent
