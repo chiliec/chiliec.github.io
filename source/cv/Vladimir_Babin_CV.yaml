@@ -86,12 +86,12 @@ design:
   theme: engineeringresumes
   page:
     size: us-letter
-    top_margin: 0.7in
-    bottom_margin: 0.7in
-    left_margin: 0.7in
-    right_margin: 0.7in
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.6in
+    right_margin: 0.6in
     show_footer: true
-    show_top_note: true
+    show_top_note: false
   colors:
     body: rgb(0, 0, 0)
     name: rgb(0, 79, 144)
@@ -102,7 +102,13 @@ design:
     footer: rgb(128, 128, 128)
     top_note: rgb(128, 128, 128)
   typography:
-    line_spacing: 0.6em
+    line_spacing: 0.45em
+    font_size:
+      body: 9.5pt
+      name: 22pt
+      headline: 9.5pt
+      connections: 9.5pt
+      section_titles: 1.15em
     alignment: left
     date_and_location_column_alignment: right
     font_family: Source Sans 3
