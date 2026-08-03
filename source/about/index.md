@@ -7,7 +7,7 @@ tagline: Developer · Athlete · Musician
 sections:
   about:
     title: About
-    intro: "iOS and macOS engineer with 10+ years shipping production Apple software — healthcare platforms used in clinics, fintech, blockchain products. Swift, SwiftUI, UIKit. I care about the parts users never see: architecture that survives change, concurrency that doesn't race, crash rates that go down. Lately I've been shipping my own apps too, including one that runs entirely on-device on Apple Intelligence. Outside of work, I switch context through sports and music."
+    intro: "iOS and macOS engineer with 10+ years shipping production Apple software — healthcare platforms used in clinics, blockchain products, multi-client delivery. Swift, SwiftUI, UIKit. I care about the parts users never see: architecture that survives change, concurrency that doesn't race, crash rates that go down. Lately I've been shipping my own apps too, including one that runs entirely on-device on Apple Intelligence. Outside of work, I switch context through sports and music."
     philosophy: Curiosity, movement, continuous learning.
 
   drives:
