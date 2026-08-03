@@ -1,6 +1,6 @@
 cv:
   name: Vladimir Babin
-  headline: "Senior iOS/macOS Engineer — Swift, SwiftUI, UIKit"
+  headline: "Senior iOS/macOS Engineer — Swift, SwiftUI, UIKit · Remote since 2015"
   location: Remote
   email: vovababin@gmail.com
   website: https://chiliec.github.io/portfolio
@@ -51,7 +51,7 @@ cv:
 
       - company: "[Pro IT](https://proitr.ru)"
         position: iOS Developer
-        location: Russia
+        location: Russia, Remote
         start_date: 2015-02
         end_date: 2021-10
         highlights:
