@@ -3,7 +3,7 @@ cv:
   headline: "Senior iOS/macOS Engineer — Swift, SwiftUI, UIKit"
   location: Remote
   email: vovababin@gmail.com
-  website: https://chiliec.github.io
+  website: https://chiliec.github.io/portfolio
   social_networks:
     - network: Telegram
       username: babin
@@ -15,17 +15,18 @@ cv:
   sections:
     Summary:
       - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, fintech, and blockchain products. Swift, SwiftUI, UIKit, Swift Concurrency.
-      - Cut crash rate ~40% in a clinical-reliability healthcare product used daily in US clinics; ships independently — a native macOS app distributed through my own Homebrew tap.
+      - Cut crash rate ~40% in a healthcare product used daily in US clinics. Also ship solo — ClaudeBar, a native macOS app signed, notarized, and distributed through my own Homebrew tap.
 
     Experience:
-      - company: Independent
-        position: Senior iOS/macOS Engineer
+      - company: "[Axveer](https://axveer.com)"
+        position: Software Engineer
         location: Remote
-        start_date: 2026-02
+        start_date: 2026-03
         end_date: present
         highlights:
-          - Built and shipped ClaudeBar, a native macOS menu-bar app in pure Swift — signed, notarized, and distributed publicly through my own Homebrew tap.
-          - Built TalkNative, an iOS app structured as four independent Swift packages, each with its own test suite.
+          - Build native iOS apps in Swift for client engagements, owning each from project setup through code signing and TestFlight release.
+          - Integrate backend services and REST APIs, handling asynchronous data flow and error states on the client.
+
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
         location: Remote
@@ -54,20 +55,14 @@ cv:
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Shipped multiple production native iOS apps (UIKit, Auto Layout), building reusable UI components and REST networking layers (URLSession, Alamofire).
+          - Shipped multiple production native iOS apps (UIKit, Auto Layout, SnapKit), building reusable UI components and REST networking layers (URLSession, Alamofire).
           - Automated build, test, and release pipelines with Fastlane, improving release stability.
-
-    Education:
-      - institution: Perm State Agricultural Academy
-        area: Applied Informatics
-        degree: B.S.
-        end_date: 2014
 
     Technical Skills:
       - label: Platforms
         details: iOS, macOS, iPadOS
       - label: Languages & UI
-        details: Swift, SwiftUI, UIKit, Auto Layout, SnapKit
+        details: Swift, SwiftUI, UIKit, Auto Layout
       - label: Concurrency
         details: Swift Concurrency (async/await, Actors), Combine, GCD, OperationQueue
       - label: Architecture
@@ -81,6 +76,12 @@ cv:
       - label: Languages (spoken)
         details: Russian — native; English — professional working proficiency
 
+    Education:
+      - institution: Perm State Agricultural Academy
+        area: Applied Informatics
+        degree: B.S.
+        end_date: 2014
+
 
 design:
   theme: engineeringresumes
@@ -88,8 +89,8 @@ design:
     size: us-letter
     top_margin: 0.5in
     bottom_margin: 0.5in
-    left_margin: 0.6in
-    right_margin: 0.6in
+    left_margin: 0.65in
+    right_margin: 0.65in
     show_footer: true
     show_top_note: false
   colors:
@@ -102,12 +103,12 @@ design:
     footer: rgb(128, 128, 128)
     top_note: rgb(128, 128, 128)
   typography:
-    line_spacing: 0.45em
+    line_spacing: 0.5em
     font_size:
-      body: 9.5pt
+      body: 10pt
       name: 22pt
-      headline: 9.5pt
-      connections: 9.5pt
+      headline: 10pt
+      connections: 10pt
       section_titles: 1.15em
     alignment: left
     date_and_location_column_alignment: right
