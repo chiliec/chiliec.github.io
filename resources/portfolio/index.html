@@ -15,21 +15,22 @@
   <h1>Vladimir Babin</h1>
   <p class="lede">
     Ten years building native iOS and macOS apps in production — healthcare platforms used
-    in clinics, fintech, blockchain products. I like the unglamorous parts: migrating a
-    100,000-line codebase without stopping releases, driving a crash rate down, making
-    a large team's architecture hold up under change. Lately I've been shipping my own
-    apps too, including one that runs entirely on-device on Apple's Foundation Models.
-    Three projects follow.
+    in clinics, blockchain products, client work delivered on short cycles. I like the
+    unglamorous parts: driving a crash rate down, making a large team's architecture hold
+    up under change, getting a new project from kickoff to a testable build in a couple of
+    weeks. These days that's SwiftUI over shared Kotlin Multiplatform logic across several
+    concurrent client apps — plus my own apps on the side. Three projects follow.
   </p>
   <div class="meta">
     vovababin@gmail.com ·
     <a href="https://github.com/chiliec">github.com/chiliec</a> ·
     <a href="https://www.linkedin.com/in/vovababin">linkedin.com/in/vovababin</a> ·
-    Bali, Indonesia
+    <a href="https://chiliec.github.io/cv/Vladimir_Babin_CV.pdf">CV</a> ·
+    Remote
   </div>
   <div class="toc">
     <div class="row"><span class="n">01</span><span class="t">Symplast</span><span class="d">iOS · macOS · healthcare at scale</span></div>
-    <div class="row"><span class="n">02</span><span class="t">TalkNative</span><span class="d">iOS · Apple Foundation Models · solo</span></div>
+    <div class="row"><span class="n">02</span><span class="t">TalkNative</span><span class="d">iOS · on-device, no servers · solo</span></div>
     <div class="row"><span class="n">03</span><span class="t">ClaudeBar</span><span class="d">macOS · shipped via Homebrew · solo</span></div>
   </div>
 </section>
@@ -92,7 +93,7 @@
         <ul>
           <li>Private by design: zero servers, zero accounts — the whole enhancement pipeline runs on-device via Apple Intelligence.</li>
           <li>Four independent Swift packages (EnhancerCore, PresetKit, HistoryKit, EnhancerUI), each with its own test suite.</li>
-          <li>Invoked from any app through a Share extension — meeting users where they already write.</li>
+          <li>Invoked from any app through a Share extension, and through a custom keyboard extension that replaces text in place.</li>
         </ul>
       </div>
       <div class="block">
@@ -100,7 +101,7 @@
         <ul>
           <li>Adopting a framework weeks after announcement means WWDC sessions are the only documentation — no Stack Overflow safety net, so the package boundaries had to absorb API churn.</li>
           <li>Splitting into four packages was a testing decision before it was an architecture one: the core enhancement logic is testable without a UI or a device.</li>
-          <li>Scoping honestly — v1 ships the Share extension; in-place text replacement is deferred rather than allowed to block release.</li>
+          <li>Scoping honestly — v1 was cut to the Share extension rather than letting in-place replacement block it. The keyboard extension that provides it followed, and is implemented and validated on device.</li>
         </ul>
       </div>
       <div class="links">
