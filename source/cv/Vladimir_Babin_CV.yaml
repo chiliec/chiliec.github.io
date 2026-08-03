@@ -15,7 +15,6 @@ cv:
   sections:
     Summary:
       - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, blockchain, and multi-client delivery. Swift, SwiftUI, UIKit, Swift Concurrency.
-      - Cut crash rate ~40% in a healthcare product used daily in US clinics. Also ship solo — ClaudeBar, a native macOS app signed, notarized, and distributed through my own Homebrew tap.
 
     Experience:
       - company: "[Axveer](https://axveer.com)"
