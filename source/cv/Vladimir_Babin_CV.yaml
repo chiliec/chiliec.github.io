@@ -14,7 +14,7 @@ cv:
 
   sections:
     Summary:
-      - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, fintech, and blockchain products. Swift, SwiftUI, UIKit, Swift Concurrency.
+      - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, blockchain, and multi-client delivery. Swift, SwiftUI, UIKit, Swift Concurrency.
       - Cut crash rate ~40% in a healthcare product used daily in US clinics. Also ship solo — ClaudeBar, a native macOS app signed, notarized, and distributed through my own Homebrew tap.
 
     Experience:
@@ -24,7 +24,8 @@ cv:
         start_date: 2026-03
         end_date: present
         highlights:
-          - Build native iOS apps in Swift for client engagements, owning each from project setup through code signing and TestFlight release.
+          - Ship native iOS apps across four-plus concurrent client engagements — SwiftUI over shared Kotlin Multiplatform logic.
+          - Take each project from kickoff to a first TestFlight build in 2–3 weeks, owning provisioning, signing, and release.
           - Integrate backend services and REST APIs, handling asynchronous data flow and error states on the client.
 
       - company: "[Artwell](https://www.artwell.ru)"
@@ -62,7 +63,7 @@ cv:
       - label: Platforms
         details: iOS, macOS, iPadOS
       - label: Languages & UI
-        details: Swift, SwiftUI, UIKit, Auto Layout
+        details: Swift, SwiftUI, UIKit, Auto Layout, Kotlin Multiplatform (KMP)
       - label: Concurrency
         details: Swift Concurrency (async/await, Actors), Combine, GCD, OperationQueue
       - label: Architecture
