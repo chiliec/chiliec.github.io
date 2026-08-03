@@ -15,6 +15,7 @@ cv:
   sections:
     Summary:
       - Senior iOS/macOS engineer with 10+ years shipping production native Apple apps — healthcare at scale, blockchain, and multi-client delivery. Swift, SwiftUI, UIKit, Swift Concurrency.
+      - Own delivery end to end — SwiftUI over shared Kotlin Multiplatform logic, modular architecture, offline-first sync, and releases I ship myself through provisioning, signing, TestFlight, and the App Store.
 
     Experience:
       - company: "[Axveer](https://axveer.com)"
