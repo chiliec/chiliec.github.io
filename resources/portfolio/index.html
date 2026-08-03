@@ -49,7 +49,6 @@
       <div class="block">
         <h2>What I built</h2>
         <ul>
-          <li>Led migration of a 100,000-line Objective-C codebase to modern Swift — while the product kept shipping to clinics.</li>
           <li>Cut the crash rate by ~40% through refactoring, monitoring, and defensive engineering.</li>
           <li>Built secure messaging, video calls, and offline-first synchronization for clinical environments.</li>
           <li>Introduced modular MVVM / Clean Architecture; mentored juniors and drove architecture review.</li>
@@ -58,7 +57,7 @@
       <div class="block">
         <h2>Engineering notes</h2>
         <ul>
-          <li>A migration of this size only works as a marathon of small, boring, individually reversible steps — never a branch that lands all at once.</li>
+          <li>Architectural change in a product clinics use every day only works as a marathon of small, boring, individually reversible steps — never a branch that lands all at once.</li>
           <li>Healthcare sets the reliability bar: a crash isn't an inconvenience, it's a clinic that can't see its patients. That changes what "done" means.</li>
           <li>Reactive pipelines (Combine, Swift Concurrency, GCD) removed a whole class of race conditions that manual state juggling kept reintroducing.</li>
         </ul>
