@@ -72,9 +72,9 @@ cv:
       - label: Testing
         details: XCTest, Swift Testing, unit & integration testing
       - label: Tooling & CI/CD
-        details: Xcode, Instruments, App Store Connect, TestFlight, Fastlane, GitHub Actions, GitLab CI, Jenkins, code signing & notarization, Git
+        details: Xcode, Instruments, App Store Connect, TestFlight, Fastlane, GitHub Actions, GitLab CI, Jenkins, Git
       - label: Languages (spoken)
-        details: Russian — native; English — professional working proficiency
+        details: English — professional working proficiency; Russian — native
 
     Education:
       - institution: Perm State Agro-Technological University
