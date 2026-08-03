@@ -23,7 +23,7 @@ cv:
         start_date: 2026-03
         end_date: present
         highlights:
-          - Ship native iOS apps across four-plus concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
+          - Ship native iOS apps across 4+ concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
           - Take each project from kickoff to a first TestFlight build in 2–3 weeks, owning provisioning, signing, and release.
           - Integrate backend services and REST APIs, handling asynchronous data flow and error states on the client.
 
