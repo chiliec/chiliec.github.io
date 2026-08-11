@@ -41,6 +41,10 @@ jobs:
           rendercv render Vladimir_Babin_CV.yaml
           cp -r rendercv_output/* ../../public/cv/
           cp Vladimir_Babin_CV.yaml ../../public/cv/
+          rendercv render Vladimir_Babin_CV_Crypto.yaml
+          mkdir -p ../../public/cv/crypto
+          cp -r rendercv_output/* ../../public/cv/crypto/
+          cp Vladimir_Babin_CV_Crypto.yaml ../../public/cv/crypto/
 
       - name: Copy resources
         run: |
