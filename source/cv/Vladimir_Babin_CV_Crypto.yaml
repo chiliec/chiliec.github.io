@@ -63,6 +63,8 @@ cv:
         summary: Owner/maintainer of a Graphene-derived C++ delegated-proof-of-stake blockchain node.
       - name: "[golos-vote-bot](https://github.com/chiliec/golos-vote-bot)"
         summary: Telegram bot in Go for collective on-chain curation on the Golos blockchain.
+      - name: "[Plonk](https://github.com/ostapondo/Plonk/pull/48)"
+        summary: "Contributor to a macOS window manager (Swift) — extracted the app's update-decision into a pure, testable layer with a full unit suite. Merged."
       - name: "[ClaudeBar](https://github.com/chiliec/ClaudeBar) / [Satoshi](https://github.com/chiliec/Satoshi)"
         summary: Native macOS menu-bar app (Swift) and a TypeScript tribute project.
 
