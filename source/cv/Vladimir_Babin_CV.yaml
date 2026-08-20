@@ -21,11 +21,11 @@ cv:
         position: Software Engineer
         location: USA, Remote
         start_date: 2026-03
-        end_date: present
+        end_date: 2026-07
         highlights:
-          - Ship iOS apps across 4+ concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
-          - Take each project from kickoff to a first TestFlight build in 2–3 weeks, owning provisioning, signing, and release.
-          - Integrate backend services and REST APIs, handling asynchronous data flow and error states on the client.
+          - Shipped iOS apps across 4+ concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
+          - Took each project from kickoff to a first TestFlight build in 2–3 weeks, owning provisioning, signing, and release.
+          - Integrated backend services and REST APIs, handling asynchronous data flow and error states on the client.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
