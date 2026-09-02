@@ -23,8 +23,8 @@ cv:
         start_date: 2026-03
         end_date: 2026-07
         highlights:
-          - Shipped iOS apps across 4+ concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
-          - Took each project from kickoff to a first TestFlight build in 2–3 weeks, owning provisioning, signing, and release.
+          - Shipped iOS apps across multiple concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
+          - Took each project from kickoff to a first TestFlight build, owning provisioning, signing, and release.
           - Integrated backend services and REST APIs, handling asynchronous data flow and error states on the client.
 
       - company: "[Artwell](https://www.artwell.ru)"
@@ -44,7 +44,7 @@ cv:
         end_date: 2024-05
         highlights:
           - "Built and maintained large-scale iOS/macOS healthcare apps used daily in US plastic-surgery clinics — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
-          - Reduced crash rate by ~40% through refactoring, monitoring, and defensive coding.
+          - Drove crash-rate reduction through crash-report triage, refactoring, and defensive coding.
           - Built reactive data pipelines (Combine, Swift Concurrency, GCD) that cut UI bugs and race conditions.
           - Implemented secure messaging, video calls, and offline-first synchronization.
           - Mentored junior developers and drove code reviews and architectural decisions.
