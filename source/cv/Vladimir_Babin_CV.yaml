@@ -58,6 +58,12 @@ cv:
           - Shipped multiple production native iOS apps (UIKit, Auto Layout, SnapKit), building reusable UI components and REST networking layers (URLSession, Alamofire).
           - Automated build, test, and release pipelines with Fastlane, improving release stability.
 
+    Open-Source Contributions:
+      - "**7 fixes merged** into external open-source projects incl. [OpenTelemetry-Go](https://github.com/open-telemetry/opentelemetry-go/pull/8832) (panic on negative reservoir size), [LangChain.js](https://github.com/langchain-ai/langchainjs/pull/11534), and [HDF5](https://github.com/scigolib/hdf5/pull/63) (uint16-overflow panic) — each reproduced with a failing test before fixing."
+      - "Systematic memory-safety bug-hunting across Go, Rust, and TypeScript — integer-overflow and out-of-bounds panics on untrusted input (e.g. [gopacket/mandiant](https://github.com/mandiant/gopacket/pull/47), [gxpdf](https://github.com/coregx/gxpdf/pull/93), [cockroachdb/apd](https://github.com/cockroachdb/apd/pull/152))."
+      - "Performance & correctness fixes to widely-used libraries — eliminated an O(n²) hot path in [goccy/go-yaml](https://github.com/goccy/go-yaml/pull/929) (~280× faster, byte-identical output) and brought [goccy/go-json](https://github.com/goccy/go-json/pull/608) struct decoding to standard-library parity."
+      - "Full portfolio: [chiliec.github.io/portfolio](https://chiliec.github.io/portfolio) · [github.com/chiliec](https://github.com/chiliec) — 20+ additional PRs under maintainer review."
+
     Technical Skills:
       - label: Platforms
         details: iOS, macOS, iPadOS
