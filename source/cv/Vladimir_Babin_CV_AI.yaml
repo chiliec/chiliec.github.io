@@ -1,0 +1,128 @@
+cv:
+  name: Vladimir Babin
+  headline: "AI Engineer — Building Products & Agents with Claude · Remote since 2015"
+  email: vovababin@gmail.com
+  website: https://chiliec.github.io/portfolio
+  social_networks:
+    - network: Telegram
+      username: babin
+    - network: GitHub
+      username: chiliec
+    - network: LinkedIn
+      username: vovababin
+
+  sections:
+    Summary:
+      - Software engineer with 11 years shipping production apps, now building AI-powered products and autonomous agents on top of Claude — LLM app development, tool/function calling, prompt and context engineering, and Claude Code agent tooling.
+      - I ship end to end - from native/TypeScript clients to the model integration, agent orchestration, and the infra that runs them autonomously.
+
+    Experience:
+      - company: "[Axveer](https://axveer.com)"
+        position: Software Engineer
+        location: USA, Remote
+        start_date: 2026-03
+        end_date: 2026-07
+        highlights:
+          - Delivered client apps across concurrent engagements, integrating backend/REST services and asynchronous data flow, with AI-assisted development throughout the delivery cycle.
+
+      - company: "[Artwell](https://www.artwell.ru)"
+        position: Senior Developer
+        location: Remote
+        start_date: 2024-06
+        end_date: 2025-12
+        highlights:
+          - Owned a production app end to end with state-driven UI and real-time updates.
+          - Integrated on-chain/smart-contract data and external services, parsing structured data and handling async updates.
+
+      - company: "[Symplast](https://symplast.com)"
+        position: Senior iOS/macOS Developer
+        location: USA, Remote
+        start_date: 2021-10
+        end_date: 2024-05
+        highlights:
+          - "Built large-scale healthcare apps used daily in US clinics — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
+          - Drove crash-rate reduction, implemented secure messaging and offline-first sync, and mentored junior developers.
+
+      - company: "[Pro IT](https://proitr.ru)"
+        position: Developer
+        location: Russia, Remote
+        start_date: 2015-02
+        end_date: 2021-10
+        highlights:
+          - Shipped multiple production apps and REST networking layers; automated build/test/release pipelines with Fastlane.
+
+    Selected AI Work:
+      - "[obsidian-memory](https://github.com/chiliec/obsidian-memory) — Claude Code plugin that auto-saves each agent session to an Obsidian vault and restores it as context next run (persistent agent memory)."
+      - "[ClaudeBar](https://github.com/chiliec/ClaudeBar) — native macOS menu-bar app surfacing Claude.ai usage at a glance (SwiftUI, Sparkle)."
+      - "[indonesian](https://github.com/chiliec/indonesian) — Claude-powered Telegram conversation partner: scenario role-play with voice (Deepgram STT + Google TTS)."
+      - "Autonomous agent infra — self-hosted Claude agents running scheduled, self-verifying tasks (open-source PR shipping) via cron, task delegation, and reusable skills."
+
+    Technical Skills:
+      - label: AI / LLM
+        details: Claude API (Anthropic), tool/function calling, prompt & context engineering, RAG, structured output, streaming
+      - label: Agents & Tooling
+        details: Claude Code plugins & skills, autonomous multi-agent orchestration, task delegation, MCP, cron-scheduled agents
+      - label: Languages
+        details: TypeScript, JavaScript, Node.js, Python, Swift, Kotlin
+      - label: Product & Web
+        details: React, Telegram bots & Mini Apps, REST API design, native iOS/macOS clients
+      - label: Data & Infra
+        details: SQLite, PostgreSQL, self-hosted deployment, GitHub Actions, GitLab CI, Git
+      - label: Languages (spoken)
+        details: English — professional working proficiency; Russian — native
+
+    Education:
+      - institution: Perm State Agro-Technological University
+        area: Applied Informatics
+        degree: B.S.
+        end_date: 2014
+
+
+design:
+  theme: engineeringresumes
+  page:
+    size: us-letter
+    top_margin: 0.5in
+    bottom_margin: 0.5in
+    left_margin: 0.65in
+    right_margin: 0.65in
+    show_footer: true
+    show_top_note: false
+  colors:
+    body: rgb(26, 26, 28)
+    name: rgb(26, 26, 28)
+    headline: rgb(70, 78, 92)
+    connections: rgb(90, 90, 95)
+    section_titles: rgb(26, 26, 28)
+    links: rgb(0, 79, 144)
+    footer: rgb(150, 150, 155)
+    top_note: rgb(150, 150, 155)
+  typography:
+    line_spacing: 0.5em
+    font_family:
+      body: Source Sans 3
+      name: XCharter
+      headline: XCharter
+      connections: Source Sans 3
+      section_titles: Source Sans 3
+    font_size:
+      body: 10pt
+      name: 26pt
+      headline: 10.5pt
+      connections: 9.5pt
+      section_titles: 1.1em
+    small_caps:
+      name: false
+      headline: false
+      connections: false
+      section_titles: true
+    bold:
+      name: true
+      headline: false
+      connections: false
+      section_titles: true
+    alignment: left
+    date_and_location_column_alignment: right
+
+locale:
+  language: english

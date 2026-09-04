@@ -38,7 +38,7 @@ jobs:
       - name: Render CV
         run: |
           cd ./source/cv/
-          mkdir -p ../../public/cv ../../public/cv-kmp ../../public/cv-ton ../../public/cv-fullstack
+          mkdir -p ../../public/cv ../../public/cv-kmp ../../public/cv-ton ../../public/cv-fullstack ../../public/cv-ai
           # Primary iOS/macOS CV → keeps the original /cv/ output (PDF, PNG, MD, HTML, source yaml)
           rendercv render Vladimir_Babin_CV.yaml
           cp -r rendercv_output/* ../../public/cv/
@@ -47,9 +47,11 @@ jobs:
           rendercv render Vladimir_Babin_CV_KMP.yaml       -pdf ../../public/cv-kmp/Vladimir_Babin_Cross_Platform_Mobile_Engineer.pdf
           rendercv render Vladimir_Babin_CV_TON.yaml       -pdf ../../public/cv-ton/Vladimir_Babin_Web3_TON_Engineer.pdf
           rendercv render Vladimir_Babin_CV_FullStack.yaml -pdf ../../public/cv-fullstack/Vladimir_Babin_Full_Stack_Engineer.pdf
+          rendercv render Vladimir_Babin_CV_AI.yaml        -pdf ../../public/cv-ai/Vladimir_Babin_AI_Engineer_Claude.pdf
           cp Vladimir_Babin_CV_KMP.yaml       ../../public/cv-kmp/
           cp Vladimir_Babin_CV_TON.yaml       ../../public/cv-ton/
           cp Vladimir_Babin_CV_FullStack.yaml ../../public/cv-fullstack/
+          cp Vladimir_Babin_CV_AI.yaml        ../../public/cv-ai/
 
       - name: Copy resources
         run: |
