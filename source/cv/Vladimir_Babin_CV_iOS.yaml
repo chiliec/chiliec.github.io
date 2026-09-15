@@ -1,6 +1,6 @@
 cv:
   name: Vladimir Babin
-  headline: "Senior iOS/macOS Engineer · Architecture-led, agent-driven delivery · Remote since 2015"
+  headline: "Senior iOS/macOS Engineer · Remote since 2015"
   email: vovababin@gmail.com
   website: https://chiliec.github.io/portfolio
   social_networks:
@@ -13,19 +13,18 @@ cv:
 
   sections:
     Summary:
-      - Senior engineer, 11 years shipping production native Apple apps — healthcare, blockchain, multi-client delivery.
-      - Work architecture-first — own the system design, specs, and acceptance criteria, and direct AI coding agents through implementation, holding review authority over module boundaries, concurrency, and what ships.
+      - Senior iOS/macOS engineer with 11 years shipping production native Apple apps — healthcare at scale, blockchain, and multi-client delivery. Swift, SwiftUI, UIKit, Swift Concurrency.
+      - Own delivery end to end — modular architecture, offline-first sync, and Kotlin Multiplatform on projects that share logic with Android.
 
     Experience:
       - company: Independent
-        position: Software Engineer — Architecture & Agent-Driven Delivery
+        position: iOS/macOS Engineer
         location: Remote
         start_date: 2026-07
         end_date: present
         highlights:
-          - Own architecture and specs, direct AI coding agents through implementation — every merge is my call.
-          - "Shipped 10 public apps and developer tools since Apr 2026 across Swift, Kotlin Multiplatform, and TypeScript — native macOS ([ClaudeBar](https://github.com/chiliec/ClaudeBar)), on-device iOS AI ([TalkNative](https://github.com/chiliec/TalkNative)), KMP/Compose ([balisurf](https://github.com/chiliec/balisurf), [slovo](https://github.com/chiliec/slovo))."
-          - "Build the agent context layer — conventions, review protocol, session memory ([obsidian-memory](https://github.com/chiliec/obsidian-memory), [claude-account](https://github.com/chiliec/claude-account))."
+          - "Built and shipped native Apple apps — [ClaudeBar](https://github.com/chiliec/ClaudeBar), a macOS menu-bar utility distributed via Homebrew; [Callback](https://github.com/chiliec/Callback), an iPhone app on SwiftUI, SwiftData, and Swift Testing."
+          - "[TalkNative](https://github.com/chiliec/TalkNative) — on-device iOS text enhancement built on Apple Foundation Models (iOS 26), with no network round-trip."
 
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
@@ -33,9 +32,9 @@ cv:
         start_date: 2026-03
         end_date: 2026-07
         highlights:
-          - Carried multiple client iOS engagements — set architecture and acceptance criteria, directed AI agents.
+          - Shipped iOS apps across multiple concurrent client engagements — some fully SwiftUI, others on shared Kotlin Multiplatform modules.
           - Took each project from kickoff to a first TestFlight build, owning provisioning, signing, and release.
-          - Shipped some apps fully SwiftUI, others on shared Kotlin Multiplatform modules.
+          - Integrated backend services and REST APIs, handling asynchronous data flow and error states on the client.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
@@ -69,19 +68,19 @@ cv:
       - label: Platforms
         details: iOS, macOS, iPadOS
       - label: Languages & UI
-        details: Swift, SwiftUI, UIKit, Auto Layout, Kotlin Multiplatform (KMP)
+        details: Swift, SwiftUI, UIKit, SwiftUI/UIKit interop, Auto Layout, Kotlin Multiplatform (KMP)
       - label: Concurrency
-        details: Swift Concurrency (async/await, Actors), Combine, GCD, OperationQueue
+        details: Swift Concurrency (async/await, Actors, Sendable, MainActor), Combine, GCD, OperationQueue
       - label: Architecture
         details: MVVM, Clean Architecture, VIPER, modularization, SPM, CocoaPods
-      - label: Data & Networking
-        details: Core Data, SQLite, Keychain, offline-first sync, REST/URLSession, Alamofire, Codable
-      - label: Testing
-        details: XCTest, Swift Testing, unit & integration testing
-      - label: Tooling & CI/CD
-        details: Xcode, Instruments, App Store Connect, TestFlight, Fastlane, GitHub Actions, GitLab CI, Jenkins, Git
-      - label: AI-Assisted Delivery
-        details: Claude Code, spec-driven development, agent context engineering, guardrails & review protocol
+      - label: Data & Persistence
+        details: Core Data, SwiftData, SQLite, Keychain, offline-first sync
+      - label: Networking
+        details: REST/URLSession, Alamofire, Codable, async networking, error & retry handling
+      - label: Testing & Performance
+        details: XCTest, Swift Testing, unit & integration testing, Instruments (Time Profiler, Allocations, Leaks)
+      - label: Delivery
+        details: Xcode, App Store Connect, TestFlight, code signing & provisioning, Fastlane, GitHub Actions, GitLab CI, Git
       - label: Languages (spoken)
         details: English — professional working proficiency; Russian — native
 
