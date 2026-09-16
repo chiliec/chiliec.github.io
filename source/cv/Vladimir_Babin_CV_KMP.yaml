@@ -28,7 +28,7 @@ cv:
           - Integrated backend services and REST APIs, handling asynchronous data flow and error states in shared code.
 
       - company: "[Artwell](https://www.artwell.ru)"
-        position: Senior Mobile Developer
+        position: Senior iOS Developer
         location: Remote
         start_date: 2024-06
         end_date: 2025-12
@@ -49,7 +49,7 @@ cv:
           - Mentored junior developers and drove code reviews and architectural decisions.
 
       - company: "[Pro IT](https://proitr.ru)"
-        position: Mobile Developer
+        position: iOS Developer
         location: Russia, Remote
         start_date: 2015-02
         end_date: 2021-10

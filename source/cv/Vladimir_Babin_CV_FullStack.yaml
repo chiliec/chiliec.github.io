@@ -26,7 +26,7 @@ cv:
           - Delivered client apps across concurrent engagements; integrated backend services and REST APIs, owning asynchronous data flow, error states, and release.
 
       - company: "[Artwell](https://www.artwell.ru)"
-        position: Senior Developer
+        position: Senior iOS Developer
         location: Remote
         start_date: 2024-06
         end_date: 2025-12
@@ -44,7 +44,7 @@ cv:
           - Built reactive data pipelines; implemented secure messaging, video calls, and offline-first synchronization; mentored junior developers and led code reviews.
 
       - company: "[Pro IT](https://proitr.ru)"
-        position: Developer
+        position: iOS Developer
         location: Russia, Remote
         start_date: 2015-02
         end_date: 2021-10
