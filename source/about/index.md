@@ -13,7 +13,7 @@ sections:
   drives:
     title: What Drives Me
     paragraphs:
-      - "I enjoy turning ideas into reliable products people actually use. Code is a tool, not a goal. A few of them are written up in my [portfolio](/portfolio/)."
+      - "I enjoy turning ideas into reliable products people actually use. Code is a tool, not a goal. A few of them are written up in my [portfolio](/portfolio/), and my own apps are [on the App Store](/apps/)."
       - Physical activity is not a hobby but a requirement. It keeps thinking sharp and decisions cleaner.
 
   interests:
@@ -36,7 +36,7 @@ sections:
         description: Constant presence.
       - emoji: 💻
         name: Building things
-        description: Apps, agents, tools, integrations.
+        description: App Store apps, agents, tools, integrations.
 
   contact:
     title: Contact
