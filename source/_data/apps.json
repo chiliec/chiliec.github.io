@@ -1,0 +1,50 @@
+[
+  {
+    "id": 6801866165,
+    "name": "BaliSurf",
+    "url": "https://apps.apple.com/us/app/balisurf/id6801866165",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/14/2f/13142fe4-4bab-7c7a-65be-ee456b36b0d3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "tagline": "BaliSurf answers one question for 20 named reef breaks in Bali, Nusa Lembongan and Lombok: is it worth paddling out, and when?",
+    "genre": "Sports",
+    "minOS": "16.0",
+    "version": "1.0.1",
+    "released": "2026-09-15",
+    "updated": "2026-09-16"
+  },
+  {
+    "id": 6796242315,
+    "name": "Callback: Interview Prep",
+    "url": "https://apps.apple.com/us/app/callback-interview-prep/id6796242315",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/09/7d/2a097da5-1bb0-45ce-3080-9cb50d7da441/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "tagline": "Callback prepares you for iOS developer interviews — on the train, in a waiting room, or the night before the real thing. Everything works offline. There is no account to create, nothing to sign in to, and no network connection required.",
+    "genre": "Education",
+    "minOS": "18.0",
+    "version": "0.2.0",
+    "released": "2026-08-21",
+    "updated": "2026-08-21"
+  },
+  {
+    "id": 6796900036,
+    "name": "SLOVO: Russian Phrases",
+    "url": "https://apps.apple.com/us/app/slovo-russian-phrases/id6796900036",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/3b/c5/b53bc54b-8a1e-81cb-a9b9-2cab4f921a71/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "tagline": "SLOVO is a gamified phrasebook trainer for people who enjoy Russian and want to pick up genuinely useful words and phrases — no grammar drills, no pressure.",
+    "genre": "Education",
+    "minOS": "16.0",
+    "version": "1.0.0",
+    "released": "2026-08-14",
+    "updated": "2026-08-14"
+  },
+  {
+    "id": 6795209576,
+    "name": "Lancar",
+    "url": "https://apps.apple.com/us/app/lancar/id6795209576",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/a1/8a/0da18a7a-439f-0b76-361e-34723fdf9e0f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "tagline": "Lancar — learn Indonesian vocabulary, anywhere.",
+    "genre": "Education",
+    "minOS": "16.0",
+    "version": "1.0.5",
+    "released": "2026-08-06",
+    "updated": "2026-08-06"
+  }
+]
