@@ -1,20 +1,28 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<%
+  var desc = page.description
+    || (page.excerpt ? strip_html(page.excerpt).replace(/\s+/g, ' ').trim().slice(0, 160) : '')
+    || config.description;
+  var image = full_url_for('/og.png');
+%>
 <title><%= page.title ? page.title + ' · ' + config.title : config.title %></title>
-<% if (page.description || config.description) { %>
-  <meta name="description" content="<%= page.description || config.description %>">
-<% } %>
+<meta name="description" content="<%= desc %>">
 <link rel="canonical" href="<%= full_url_for(page.path) %>">
 
 <meta property="og:type" content="<%= page.layout === 'post' ? 'article' : 'website' %>">
 <meta property="og:site_name" content="<%= config.title %>">
 <meta property="og:title" content="<%= page.title || config.title %>">
-<meta property="og:description" content="<%= page.description || config.description %>">
+<meta property="og:description" content="<%= desc %>">
 <meta property="og:url" content="<%= full_url_for(page.path) %>">
-<meta property="og:locale" content="<%= config.language %>">
-<meta name="twitter:card" content="summary">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="<%= image %>">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="<%= image %>">
 <meta name="twitter:title" content="<%= page.title || config.title %>">
-<meta name="twitter:description" content="<%= page.description || config.description %>">
+<meta name="twitter:description" content="<%= desc %>">
 
 <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
 <link rel="icon" href="<%- url_for('/favicon.svg') %>" type="image/svg+xml">

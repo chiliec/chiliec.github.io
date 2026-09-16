@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://chiliec.github.io/sitemap.xml

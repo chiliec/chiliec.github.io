@@ -36,7 +36,7 @@ jobs:
           python-version: '3.12'
 
       - name: Install RenderCV
-        run: pip install "rendercv[full]"
+        run: pip install "rendercv[full]==2.8"
 
       - name: Render CV
         run: |
