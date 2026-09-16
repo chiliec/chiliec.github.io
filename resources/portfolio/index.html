@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Vladimir Babin — iOS/macOS Portfolio</title>
-<meta name="description" content="Case studies from 10+ years of production iOS and macOS engineering: Symplast, TalkNative, ClaudeBar.">
+<meta name="description" content="Case studies from 10+ years of production iOS and macOS engineering: Symplast, TalkNative, ClaudeBar, and four App Store apps.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +19,7 @@
     unglamorous parts: driving a crash rate down, making a large team's architecture hold
     up under change, getting a new project from kickoff to a testable build in a couple of
     weeks. These days that's several concurrent client apps — some fully SwiftUI, others
-    built on shared Kotlin Multiplatform modules — plus <a href="https://chiliec.github.io/apps/">my own apps</a> on the App Store. Three
+    built on shared Kotlin Multiplatform modules — plus <a href="https://chiliec.github.io/apps/">my own apps</a> on the App Store. Four
     projects follow.
   </p>
   <div class="meta">
@@ -34,13 +34,14 @@
     <div class="row"><span class="n">01</span><span class="t">Symplast</span><span class="d">iOS · macOS · healthcare at scale</span></div>
     <div class="row"><span class="n">02</span><span class="t">TalkNative</span><span class="d">iOS · on-device, no servers · solo</span></div>
     <div class="row"><span class="n">03</span><span class="t">ClaudeBar</span><span class="d">macOS · shipped via Homebrew · solo</span></div>
+    <div class="row"><span class="n">04</span><span class="t">App Store apps</span><span class="d">iOS · Android · 4 apps live · solo</span></div>
   </div>
 </section>
 
 <!-- ===================== 01 SYMPLAST ===================== -->
 <section class="page">
   <div class="head">
-    <div class="num">01 / 03</div>
+    <div class="num">01 / 04</div>
     <h1>Symplast</h1>
     <div class="type"><strong>Product team</strong> · my role: Senior iOS/macOS Developer · 2021–2024</div>
   </div>
@@ -80,7 +81,7 @@
 <!-- ===================== 02 TALKNATIVE ===================== -->
 <section class="page">
   <div class="head">
-    <div class="num">02 / 03</div>
+    <div class="num">02 / 04</div>
     <h1>TalkNative</h1>
     <div class="type"><strong>Self-initiated</strong> · solo · work in progress</div>
   </div>
@@ -154,7 +155,7 @@
 <!-- ===================== 03 CLAUDEBAR ===================== -->
 <section class="page">
   <div class="head">
-    <div class="num">03 / 03</div>
+    <div class="num">03 / 04</div>
     <h1>ClaudeBar</h1>
     <div class="type"><strong>Self-initiated</strong> · solo · shipped</div>
   </div>
@@ -186,6 +187,76 @@
       <img src="images/claudebar-1.png" alt="ClaudeBar in the macOS menu bar">
       <div class="caption">Usage at a glance, in the menu bar</div>
     </div>
+  </div>
+</section>
+
+<!-- ===================== 04 APP STORE APPS ===================== -->
+<section class="page">
+  <div class="head">
+    <div class="num">04 / 04</div>
+    <h1>App Store apps</h1>
+    <div class="type"><strong>Self-initiated</strong> · solo · four apps live · Aug–Sep 2026</div>
+  </div>
+  <p class="summary">Four apps taken from idea to the App Store in two months — content, design,
+  release automation and review included. Three share one Kotlin Multiplatform codebase per app
+  across iOS and Android; one is pure SwiftUI.</p>
+  <div class="apps-grid">
+    <div class="block app-card">
+      <img src="images/icon-balisurf.jpg" alt="BaliSurf icon">
+      <div>
+        <h3>BaliSurf</h3>
+        <h2>iOS + Android · Compose Multiplatform · Sports</h2>
+        <ul>
+          <li>Per-spot surf verdicts for 20 reef breaks, from hand-authored tide, swell and wind rules over free Open-Meteo data.</li>
+          <li>Reef bathymetry maps derived from Sentinel-2 satellite imagery and calibrated against on-reef control points.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="block app-card">
+      <img src="images/icon-callback.jpg" alt="Callback icon">
+      <div>
+        <h3>Callback: Interview Prep</h3>
+        <h2>iOS · SwiftUI + SwiftData · Education</h2>
+        <ul>
+          <li>iOS interview prep: 11 topics, ~300 questions, lessons and timed mock interviews. Fully offline, no account.</li>
+          <li>Content guardrail tests catch predictable answer positions; store metadata is pushed by scripts against the App Store Connect API.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="block app-card">
+      <img src="images/icon-slovo.jpg" alt="SLOVO icon">
+      <div>
+        <h3>SLOVO: Russian Phrases</h3>
+        <h2>iOS + Android · Compose Multiplatform · Education</h2>
+        <ul>
+          <li>Gamified Russian phrasebook with human audio from native speakers, themed units and a study-then-test loop.</li>
+          <li>Shared Kotlin UI and logic for both platforms; 100+ tests green in CI.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="block app-card">
+      <img src="images/icon-lancar.jpg" alt="Lancar icon">
+      <div>
+        <h3>Lancar</h3>
+        <h2>iOS + Android · Compose Multiplatform · Education</h2>
+        <ul>
+          <li>Offline Indonesian vocabulary trainer: ~1,800 cards with native audio bundled in the app, spaced repetition, three drill modes.</li>
+          <li>A content pipeline generates cards and audio; fastlane lanes ship both stores. Live on the App Store and Google Play.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="block">
+    <h2>Engineering notes</h2>
+    <ul>
+      <li>Offline-first, no accounts, no backend — private by design, and nothing to page me at 3am. The whole product fits in the app bundle.</li>
+      <li>Release engineering is part of the product: fastlane lanes, App Store Connect API scripts and CI take a tagged commit to TestFlight and review without hand steps.</li>
+      <li>App Store review is an engineering constraint. BaliSurf cleared a Guideline 4.3(a) rejection by leading the listing with what only it does — satellite reef maps and per-spot rules.</li>
+    </ul>
+  </div>
+  <div class="links">
+    <a href="https://chiliec.github.io/apps/">chiliec.github.io/apps</a>
+    <a href="https://apps.apple.com/developer/id1557125814">apps.apple.com/developer/id1557125814</a>
   </div>
 </section>
 

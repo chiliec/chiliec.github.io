@@ -61,6 +61,7 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
 .cover h1 { font-size: 34pt; font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; margin-bottom: 8mm; }
 .cover .lede { font-size: 13pt; line-height: 1.65; max-width: 150mm; margin-bottom: 10mm; }
 .cover .meta { font-size: 10pt; color: var(--muted); }
+.cover .lede a,
 .cover .meta a { color: var(--accent); text-decoration: none; }
 
 .toc { margin-top: 12mm; border-top: 2px solid var(--ink); padding-top: 6mm; }
@@ -68,6 +69,14 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
 .toc .n { font-weight: 700; color: var(--accent); width: 8mm; }
 .toc .t { font-weight: 600; }
 .toc .d { color: var(--muted); margin-left: auto; text-align: right; }
+
+/* ---------- app cards (page 04) ---------- */
+.apps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin: 6mm 0 5mm; }
+.app-card { display: grid; grid-template-columns: 14mm 1fr; column-gap: 4mm; align-items: start; }
+.app-card img { width: 14mm; height: 14mm; border-radius: 3.2mm; border: 0.4pt solid var(--rule); }
+.app-card h3 { font-size: 11pt; font-weight: 700; margin-bottom: 0.5mm; }
+.app-card h2 { margin-bottom: 1.5mm; }
+.app-card li { font-size: 9.5pt; line-height: 1.4; }
 
 /* ---------- voice AI inline diagram ---------- */
 .diagram { width: 100%; border: 0.4pt solid var(--rule); border-radius: 2mm; background: #fff; }
@@ -91,6 +100,7 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
   body { font-size: 12px; }
   .page { padding: 24px 20px; }
   .cols { grid-template-columns: 1fr; gap: 24px; }
+  .apps-grid { grid-template-columns: 1fr; }
   .col-images img { max-height: none; }
   .cover h1 { font-size: 32px; }
   .cover .lede { font-size: 16px; }
