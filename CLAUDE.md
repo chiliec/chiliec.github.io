@@ -24,4 +24,4 @@ When adding a top-level static asset: choose `source/` (Hexo page), `resources/`
 - `source/` non-posts → standalone pages
 - `scaffolds/` — templates for `hexo new <layout> <title>`
 - `public/` — gitignored build output; `db.json` — gitignored Hexo cache
-- `_config.yml` — `language: ru`, `permalink: post/:title/`, theme `landscape`, sitemap generator
+- `_config.yml` — `language: ru`, `permalink: post/:title/`, theme `mono` (layouts in `themes/mono/layout/`, Stylus in `themes/mono/source/css/`), sitemap generator
