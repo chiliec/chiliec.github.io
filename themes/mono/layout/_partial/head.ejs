@@ -6,7 +6,7 @@
     || config.description;
   var image = full_url_for('/og.png');
 %>
-<title><%= page.title ? page.title + ' · ' + config.title : config.title %></title>
+<title><%= page.title && page.title !== config.title ? page.title + ' · ' + config.title : config.title %></title>
 <meta name="description" content="<%= desc %>">
 <link rel="canonical" href="<%= full_url_for(page.path) %>">
 

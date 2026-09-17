@@ -63,6 +63,7 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
 .cover .meta { font-size: 10pt; color: var(--muted); }
 .cover .lede a,
 .cover .meta a { color: var(--accent); text-decoration: none; }
+.cover .lede a { text-decoration: underline; text-underline-offset: 2px; }
 
 .toc { margin-top: 12mm; border-top: 2px solid var(--ink); padding-top: 6mm; }
 .toc .row { display: flex; align-items: baseline; gap: 4mm; padding: 2.2mm 0; border-bottom: 0.4pt solid var(--rule); font-size: 10.5pt; }
@@ -74,8 +75,8 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
 .apps-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; margin: 6mm 0 5mm; }
 .app-card { display: grid; grid-template-columns: 14mm 1fr; column-gap: 4mm; align-items: start; }
 .app-card img { width: 14mm; height: 14mm; border-radius: 3.2mm; border: 0.4pt solid var(--rule); }
-.app-card h3 { font-size: 11pt; font-weight: 700; margin-bottom: 0.5mm; }
-.app-card h2 { margin-bottom: 1.5mm; }
+.app-card h2 { font-size: 11pt; font-weight: 700; letter-spacing: 0; color: var(--ink); text-transform: none; margin-bottom: 0.5mm; }
+.app-card h3 { font-size: 8.5pt; font-weight: 700; letter-spacing: 0.14em; color: var(--accent); text-transform: uppercase; margin-bottom: 1.5mm; }
 .app-card li { font-size: 9.5pt; line-height: 1.4; }
 
 /* ---------- voice AI inline diagram ---------- */
@@ -107,4 +108,8 @@ code { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5pt; }
   .head h1 { font-size: 24px; }
   .toc .row { flex-wrap: wrap; }
   .toc .d { margin-left: 0; width: 100%; text-align: left; }
+}
+
+@media screen {
+  .links a, .cover .meta a { display: inline-block; padding: 2mm 0; }
 }

@@ -4,9 +4,9 @@ Real screenshots, captured 2026-06-04.
 
 | File | Content |
 |---|---|
-| `symplast-1.png` | Symplast on iPad — consultation notes (demo data) |
-| `symplast-2.png` | Symplast on iPad — patient billing and estimates (demo data) |
-| `claudebar-1.png` | ClaudeBar popover in the macOS menu bar |
+| `symplast-1.jpg` | Symplast on iPad — consultation notes (demo data) |
+| `symplast-2.jpg` | Symplast on iPad — patient billing and estimates (demo data) |
+| `claudebar-1.jpg` | ClaudeBar popover in the macOS menu bar |
 | `icon-*.jpg` | App Store icons (512 px) for BaliSurf, Callback, SLOVO, Lancar — from `artworkUrl512` in the iTunes Lookup |
 
 TalkNative uses an inline SVG architecture diagram in `index.html` rather than
