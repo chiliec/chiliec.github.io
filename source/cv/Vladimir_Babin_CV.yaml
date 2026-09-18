@@ -71,15 +71,15 @@ cv:
       - label: Languages & UI
         details: Swift, SwiftUI, UIKit, Auto Layout, Kotlin Multiplatform (KMP)
       - label: Concurrency
-        details: Swift Concurrency (async/await, Actors), Combine, GCD, OperationQueue
+        details: Swift Concurrency (async/await, Actors, Sendable, MainActor), Combine, GCD, OperationQueue
       - label: Architecture
         details: MVVM, Clean Architecture, VIPER, modularization, SPM, CocoaPods
       - label: Data & Networking
-        details: Core Data, SQLite, Keychain, offline-first sync, REST/URLSession, Alamofire, Codable
+        details: Core Data, SwiftData, SQLite, Keychain, offline-first sync, REST/URLSession, Alamofire, Codable
       - label: Testing
         details: XCTest, Swift Testing, unit & integration testing
       - label: Tooling & CI/CD
-        details: Xcode, Instruments, App Store Connect, TestFlight, Fastlane, GitHub Actions, GitLab CI, Jenkins, Git
+        details: Xcode, Instruments, App Store Connect, TestFlight, code signing & provisioning, Fastlane, GitHub Actions, GitLab CI, Jenkins, Git
       - label: AI-Assisted Delivery
         details: Claude Code, spec-driven development, agent context engineering, guardrails & review protocol
       - label: Languages (spoken)
@@ -91,52 +91,6 @@ cv:
         degree: B.S.
         end_date: 2014
 
-
-design:
-  theme: engineeringresumes
-  page:
-    size: us-letter
-    top_margin: 0.5in
-    bottom_margin: 0.5in
-    left_margin: 0.65in
-    right_margin: 0.65in
-    show_footer: true
-    show_top_note: false
-  colors:
-    body: rgb(26, 26, 28)
-    name: rgb(26, 26, 28)
-    headline: rgb(70, 78, 92)
-    connections: rgb(90, 90, 95)
-    section_titles: rgb(26, 26, 28)
-    links: rgb(0, 79, 144)
-    footer: rgb(150, 150, 155)
-    top_note: rgb(150, 150, 155)
-  typography:
-    line_spacing: 0.5em
-    font_family:
-      body: Source Sans 3
-      name: XCharter
-      headline: XCharter
-      connections: Source Sans 3
-      section_titles: Source Sans 3
-    font_size:
-      body: 10pt
-      name: 26pt
-      headline: 10.5pt
-      connections: 9.5pt
-      section_titles: 1.1em
-    small_caps:
-      name: false
-      headline: false
-      connections: false
-      section_titles: true
-    bold:
-      name: true
-      headline: false
-      connections: false
-      section_titles: true
-    alignment: left
-    date_and_location_column_alignment: right
-
-locale:
-  language: english
+settings:
+  render_command:
+    design: design.yaml

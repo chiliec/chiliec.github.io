@@ -17,6 +17,15 @@ cv:
       - Own delivery end to end — modular architecture, offline-first sync, kickoff to store.
 
     Experience:
+      - company: Independent
+        position: Software Engineer
+        location: Remote
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - "Shipped Kotlin Multiplatform / Compose apps to the App Store — [BaliSurf](https://github.com/chiliec/balisurf) and [SLOVO](https://github.com/chiliec/slovo) — shared business logic, platform-native shells."
+          - "Ship native Apple apps alongside — [ClaudeBar](https://github.com/chiliec/ClaudeBar) (macOS), [TalkNative](https://github.com/chiliec/TalkNative) (iOS, on-device AI)."
+
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
         location: USA, Remote
@@ -35,7 +44,6 @@ cv:
         highlights:
           - Owned a production app end to end, building state-driven UI with real-time updates.
           - Integrated TON blockchain and smart-contract state, parsing on-chain data and handling async updates.
-          - Designed REST API integration and client-side data modeling with a focus on performance and UI responsiveness.
 
       - company: "[Symplast](https://symplast.com)"
         position: Senior iOS/macOS Developer
@@ -54,8 +62,7 @@ cv:
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Shipped multiple production native apps, building reusable UI components and REST networking layers.
-          - Automated build, test, and release pipelines with Fastlane, improving release stability.
+          - Shipped multiple production native apps with reusable UI components and REST networking layers; automated build/test/release with Fastlane.
 
     Technical Skills:
       - label: Cross-platform
@@ -81,52 +88,6 @@ cv:
         degree: B.S.
         end_date: 2014
 
-
-design:
-  theme: engineeringresumes
-  page:
-    size: us-letter
-    top_margin: 0.5in
-    bottom_margin: 0.5in
-    left_margin: 0.65in
-    right_margin: 0.65in
-    show_footer: true
-    show_top_note: false
-  colors:
-    body: rgb(26, 26, 28)
-    name: rgb(26, 26, 28)
-    headline: rgb(70, 78, 92)
-    connections: rgb(90, 90, 95)
-    section_titles: rgb(26, 26, 28)
-    links: rgb(0, 79, 144)
-    footer: rgb(150, 150, 155)
-    top_note: rgb(150, 150, 155)
-  typography:
-    line_spacing: 0.5em
-    font_family:
-      body: Source Sans 3
-      name: XCharter
-      headline: XCharter
-      connections: Source Sans 3
-      section_titles: Source Sans 3
-    font_size:
-      body: 10pt
-      name: 26pt
-      headline: 10.5pt
-      connections: 9.5pt
-      section_titles: 1.1em
-    small_caps:
-      name: false
-      headline: false
-      connections: false
-      section_titles: true
-    bold:
-      name: true
-      headline: false
-      connections: false
-      section_titles: true
-    alignment: left
-    date_and_location_column_alignment: right
-
-locale:
-  language: english
+settings:
+  render_command:
+    design: design.yaml

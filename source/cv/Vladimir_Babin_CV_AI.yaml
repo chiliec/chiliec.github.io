@@ -14,9 +14,18 @@ cv:
   sections:
     Summary:
       - Software engineer with 11 years shipping production apps, now building AI-powered products and autonomous agents on top of Claude — LLM app development, tool/function calling, prompt and context engineering, and Claude Code agent tooling.
-      - I ship end to end - from native/TypeScript clients to the model integration, agent orchestration, and the infra that runs them autonomously.
+      - I ship end to end — from native/TypeScript clients to the model integration, agent orchestration, and the infra that runs them autonomously.
 
     Experience:
+      - company: Independent
+        position: Software Engineer
+        location: Remote
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - Own architecture and specs, direct Claude Code agents through implementation — 10 public apps and developer tools shipped since Apr 2026 across Swift, Kotlin Multiplatform, and TypeScript.
+          - Build the agent context layer — conventions, review protocol, persistent session memory — and run self-hosted agents on scheduled, self-verifying tasks.
+
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
         location: USA, Remote
@@ -31,8 +40,7 @@ cv:
         start_date: 2024-06
         end_date: 2025-12
         highlights:
-          - Owned a production app end to end with state-driven UI and real-time updates.
-          - Integrated on-chain/smart-contract data and external services, parsing structured data and handling async updates.
+          - Owned a production app end to end — state-driven UI with real-time updates, on-chain/smart-contract data and external services integrated with async updates.
 
       - company: "[Symplast](https://symplast.com)"
         position: Senior iOS/macOS Developer
@@ -55,7 +63,6 @@ cv:
       - "[obsidian-memory](https://github.com/chiliec/obsidian-memory) — Claude Code plugin that auto-saves each agent session to an Obsidian vault and restores it as context next run (persistent agent memory)."
       - "[ClaudeBar](https://github.com/chiliec/ClaudeBar) — native macOS menu-bar app surfacing Claude.ai usage at a glance (SwiftUI, Sparkle)."
       - "[indonesian](https://github.com/chiliec/indonesian) — Claude-powered Telegram conversation partner: scenario role-play with voice (Deepgram STT + Google TTS)."
-      - "Autonomous agent infra — self-hosted Claude agents running scheduled, self-verifying tasks (open-source PR shipping) via cron, task delegation, and reusable skills."
 
     Technical Skills:
       - label: AI / LLM
@@ -77,52 +84,6 @@ cv:
         degree: B.S.
         end_date: 2014
 
-
-design:
-  theme: engineeringresumes
-  page:
-    size: us-letter
-    top_margin: 0.5in
-    bottom_margin: 0.5in
-    left_margin: 0.65in
-    right_margin: 0.65in
-    show_footer: true
-    show_top_note: false
-  colors:
-    body: rgb(26, 26, 28)
-    name: rgb(26, 26, 28)
-    headline: rgb(70, 78, 92)
-    connections: rgb(90, 90, 95)
-    section_titles: rgb(26, 26, 28)
-    links: rgb(0, 79, 144)
-    footer: rgb(150, 150, 155)
-    top_note: rgb(150, 150, 155)
-  typography:
-    line_spacing: 0.5em
-    font_family:
-      body: Source Sans 3
-      name: XCharter
-      headline: XCharter
-      connections: Source Sans 3
-      section_titles: Source Sans 3
-    font_size:
-      body: 10pt
-      name: 26pt
-      headline: 10.5pt
-      connections: 9.5pt
-      section_titles: 1.1em
-    small_caps:
-      name: false
-      headline: false
-      connections: false
-      section_titles: true
-    bold:
-      name: true
-      headline: false
-      connections: false
-      section_titles: true
-    alignment: left
-    date_and_location_column_alignment: right
-
-locale:
-  language: english
+settings:
+  render_command:
+    design: design.yaml

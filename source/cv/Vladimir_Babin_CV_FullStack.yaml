@@ -1,6 +1,6 @@
 cv:
   name: Vladimir Babin
-  headline: "Full-Stack Product Engineer (TypeScript · React · Node) · Remote since 2015"
+  headline: "Full-Stack Product Engineer (TypeScript · React · Node · TON) · Remote since 2015"
   email: vovababin@gmail.com
   website: https://chiliec.github.io/portfolio
   social_networks:
@@ -13,10 +13,19 @@ cv:
 
   sections:
     Summary:
-      - Full-stack product engineer with 11 years shipping software end to end — React front-ends, Node/TypeScript backends and bots, and native mobile clients.
-      - Comfortable owning a product from idea to release across the whole stack, integrating REST/backend services and third-party APIs, with an eye for UX because I also ship App Store apps.
+      - Full-stack product engineer with 11 years shipping software end to end — React front-ends, Node/TypeScript backends, Telegram bots and Mini Apps, and native mobile clients.
+      - "TON ecosystem: on-chain data integration and Tact smart contracts deployed to mainnet. I own a product from idea to release across the whole stack, with an eye for UX because I also ship App Store apps."
 
     Experience:
+      - company: Independent
+        position: Software Engineer
+        location: Remote
+        start_date: 2026-07
+        end_date: present
+        highlights:
+          - "Shipped 10 public apps and developer tools since Apr 2026 across TypeScript, Swift, and Kotlin Multiplatform — a Telegram voice bot ([indonesian](https://github.com/chiliec/indonesian)), a macOS menu-bar app ([ClaudeBar](https://github.com/chiliec/ClaudeBar)), four App Store apps."
+          - "Own architecture and specs end to end, direct AI coding agents through implementation — every merge is my call."
+
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
         location: USA, Remote
@@ -32,7 +41,7 @@ cv:
         end_date: 2025-12
         highlights:
           - Built state-driven UI with real-time updates; designed REST API integration and client-side data modeling for performance and responsiveness.
-          - Integrated blockchain/smart-contract state and parsed external data sources.
+          - Integrated TON blockchain and smart-contract state into a production app — parsing on-chain data, handling async updates and error states.
 
       - company: "[Symplast](https://symplast.com)"
         position: Senior iOS/macOS Developer
@@ -56,6 +65,8 @@ cv:
         details: React, TypeScript, JavaScript, HTML, CSS
       - label: Backend
         details: Node.js, REST API design, Telegram bots & Mini Apps, PHP/Yii2, SQLite, PostgreSQL
+      - label: Blockchain
+        details: TON, Tact smart contracts (mainnet), on-chain data parsing, wallet integration, TON Connect
       - label: Mobile
         details: Swift, SwiftUI, Kotlin Multiplatform (native clients when needed)
       - label: Architecture
@@ -71,52 +82,6 @@ cv:
         degree: B.S.
         end_date: 2014
 
-
-design:
-  theme: engineeringresumes
-  page:
-    size: us-letter
-    top_margin: 0.5in
-    bottom_margin: 0.5in
-    left_margin: 0.65in
-    right_margin: 0.65in
-    show_footer: true
-    show_top_note: false
-  colors:
-    body: rgb(26, 26, 28)
-    name: rgb(26, 26, 28)
-    headline: rgb(70, 78, 92)
-    connections: rgb(90, 90, 95)
-    section_titles: rgb(26, 26, 28)
-    links: rgb(0, 79, 144)
-    footer: rgb(150, 150, 155)
-    top_note: rgb(150, 150, 155)
-  typography:
-    line_spacing: 0.5em
-    font_family:
-      body: Source Sans 3
-      name: XCharter
-      headline: XCharter
-      connections: Source Sans 3
-      section_titles: Source Sans 3
-    font_size:
-      body: 10pt
-      name: 26pt
-      headline: 10.5pt
-      connections: 9.5pt
-      section_titles: 1.1em
-    small_caps:
-      name: false
-      headline: false
-      connections: false
-      section_titles: true
-    bold:
-      name: true
-      headline: false
-      connections: false
-      section_titles: true
-    alignment: left
-    date_and_location_column_alignment: right
-
-locale:
-  language: english
+settings:
+  render_command:
+    design: design.yaml

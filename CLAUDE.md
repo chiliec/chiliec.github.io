@@ -13,7 +13,7 @@ No tests, linter, or formatter.
 ## Deployment (`.github/workflows/jekyll-gh-pages.yml`)
 On push to `master`:
 1. `npm install && npm run build` → Hexo writes site to `./public`
-2. `rendercv render Vladimir_Babin_CV.yaml` (inside `source/cv/`) → copies output to `public/cv/`. **CV rendered at deploy time, not by Hexo.** Edit `source/cv/Vladimir_Babin_CV.yaml` to update the published CV.
+2. `rendercv render Vladimir_Babin_CV.yaml` (inside `source/cv/`) → copies output to `public/cv/`. **CV rendered at deploy time, not by Hexo.** Edit `source/cv/Vladimir_Babin_CV.yaml` to update the published CV; role variants are `Vladimir_Babin_CV_*.yaml`, all sharing `source/cv/design.yaml` via `settings.render_command.design`. Every variant must stay exactly 1 page.
 3. `./resources/` copied directly into `./public/` — bypasses Hexo rendering. Put static assets here.
 4. Deploys via `actions/deploy-pages` → served at `chiliec.github.io` (no custom domain / CNAME).
 
