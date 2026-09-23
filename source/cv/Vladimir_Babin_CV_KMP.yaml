@@ -1,6 +1,6 @@
 cv:
   name: Vladimir Babin
-  headline: "Cross-Platform Mobile Engineer (KMP / Compose) · Remote since 2015"
+  headline: "Senior Mobile Engineer — native iOS + Kotlin Multiplatform / Compose · Remote since 2015"
   email: vovababin@gmail.com
   website: https://chiliec.github.io/portfolio
   social_networks:
@@ -13,8 +13,8 @@ cv:
 
   sections:
     Summary:
-      - Mobile engineer with 11 years shipping production apps, now focused on Kotlin Multiplatform and Compose Multiplatform for shared Android/iOS codebases. A deep native-iOS background (Swift, SwiftUI) means I understand both platforms from the inside, so shared code respects real platform behavior instead of fighting it.
-      - Own delivery end to end — modular architecture, offline-first sync, kickoff to store.
+      - Mobile engineer with 11 years shipping production apps — native iOS/macOS since 2015, Kotlin Multiplatform / Compose for shared iOS/Android codebases since 2026. The native background means shared code respects real platform behavior.
+      - Own delivery end to end — modular architecture, offline-first sync, kickoff to both stores.
 
     Experience:
       - company: Independent
@@ -23,8 +23,8 @@ cv:
         start_date: 2026-07
         end_date: present
         highlights:
-          - "Shipped Kotlin Multiplatform / Compose apps to the App Store — [BaliSurf](https://github.com/chiliec/balisurf) and [SLOVO](https://github.com/chiliec/slovo) — shared business logic, platform-native shells."
-          - "Ship native Apple apps alongside — [ClaudeBar](https://github.com/chiliec/ClaudeBar) (macOS), [TalkNative](https://github.com/chiliec/TalkNative) (iOS, on-device AI)."
+          - "Shipped three Kotlin Multiplatform / Compose apps for iOS and Android in two months — [BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app) — shared Kotlin UI and logic, platform-native shells, tests in CI, fastlane lanes for App Store and Google Play."
+          - "Ship native Apple apps alongside — [Callback](https://github.com/chiliec/Callback) (SwiftUI/SwiftData), [TalkNative](https://github.com/chiliec/TalkNative) (iOS, on-device AI), [ClaudeBar](https://github.com/chiliec/ClaudeBar) (macOS)."
 
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
@@ -33,8 +33,7 @@ cv:
         end_date: 2026-07
         highlights:
           - Delivered mobile apps across concurrent client engagements — some on shared Kotlin Multiplatform modules feeding both Android and iOS, others fully native.
-          - Took each project from kickoff to a first store/TestFlight build, owning build config, signing, and release.
-          - Integrated backend services and REST APIs, handling asynchronous data flow and error states in shared code.
+          - Took each project from kickoff to a first store/TestFlight build in weeks, owning build config, signing, and release; integrated REST APIs with async data flow and error states in shared code.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
@@ -42,8 +41,7 @@ cv:
         start_date: 2024-06
         end_date: 2025-12
         highlights:
-          - Owned a production app end to end, building state-driven UI with real-time updates.
-          - Integrated TON blockchain and smart-contract state, parsing on-chain data and handling async updates.
+          - Owned a production SwiftUI app end to end — real-time state-driven UI, TON blockchain and smart-contract integration.
 
       - company: "[Symplast](https://symplast.com)"
         position: Senior iOS/macOS Developer
@@ -51,10 +49,9 @@ cv:
         start_date: 2021-10
         end_date: 2024-05
         highlights:
-          - "Built and maintained large-scale healthcare apps used daily in US clinics — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
-          - Drove crash-rate reduction through crash-report triage, refactoring, and defensive coding.
-          - Built reactive data pipelines and implemented secure messaging, video calls, and offline-first synchronization.
-          - Mentored junior developers and drove code reviews and architectural decisions.
+          - "Built and maintained iOS/macOS healthcare apps used daily in US clinics — secure messaging, video consultations, offline-first sync — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
+          - Led a 100k+ LoC Objective-C → Swift migration onto modular MVVM/Clean Architecture; cut crash rate ~40%.
+          - Built reactive data pipelines that removed a class of race conditions; mentored juniors, drove architecture review.
 
       - company: "[Pro IT](https://proitr.ru)"
         position: iOS Developer
@@ -62,7 +59,7 @@ cv:
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Shipped multiple production native apps with reusable UI components and REST networking layers; automated build/test/release with Fastlane.
+          - Shipped native iOS apps for enterprise and government clients; reusable UI components, REST layers, Fastlane CI.
 
     Technical Skills:
       - label: Cross-platform
@@ -74,7 +71,7 @@ cv:
       - label: Architecture
         details: MVVM, Clean Architecture, modularization, offline-first sync
       - label: Data & Networking
-        details: REST, Codable/kotlinx.serialization, SQLite, Core Data, Keychain
+        details: REST, Codable/kotlinx.serialization, SQLite, Core Data, SwiftData, Keychain
       - label: Testing
         details: XCTest, Swift Testing, unit & integration testing
       - label: Tooling & CI/CD

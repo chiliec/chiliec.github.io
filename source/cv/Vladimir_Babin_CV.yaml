@@ -14,18 +14,18 @@ cv:
   sections:
     Summary:
       - Senior engineer, 11 years shipping production native Apple apps — healthcare, blockchain, multi-client delivery.
-      - Work architecture-first — own the system design, specs, and acceptance criteria, and direct AI coding agents through implementation, holding review authority over module boundaries, concurrency, and what ships.
+      - Architecture-first — I own system design, specs, and acceptance criteria, direct AI coding agents through implementation, and write the concurrency- and platform-critical code myself. Every merge is my call.
 
     Experience:
       - company: Independent
-        position: Software Engineer — Architecture & Agent-Driven Delivery
+        position: Software Engineer
         location: Remote
         start_date: 2026-07
         end_date: present
         highlights:
-          - Own architecture and specs, direct AI coding agents through implementation — every merge is my call.
-          - "Shipped 10 public apps and developer tools since Apr 2026 across Swift, Kotlin Multiplatform, and TypeScript — native macOS ([ClaudeBar](https://github.com/chiliec/ClaudeBar)), on-device iOS AI ([TalkNative](https://github.com/chiliec/TalkNative)), KMP/Compose ([balisurf](https://github.com/chiliec/balisurf), [slovo](https://github.com/chiliec/slovo))."
-          - "Build the agent context layer — conventions, review protocol, session memory ([obsidian-memory](https://github.com/chiliec/obsidian-memory), [claude-account](https://github.com/chiliec/claude-account))."
+          - "Took four apps from idea to the App Store in two months — three on Kotlin Multiplatform/Compose for iOS and Android ([BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app)), one pure SwiftUI/SwiftData ([Callback](https://github.com/chiliec/Callback))."
+          - "[TalkNative](https://github.com/chiliec/TalkNative) — on-device iOS text enhancer on Apple Foundation Models, four Swift packages each with its own tests; [ClaudeBar](https://github.com/chiliec/ClaudeBar) — native macOS menu-bar app, signed, notarized, shipped via Homebrew."
+          - "Build the agent context layer — conventions, review protocol, session memory ([obsidian-memory](https://github.com/chiliec/obsidian-memory))."
 
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
@@ -33,9 +33,8 @@ cv:
         start_date: 2026-03
         end_date: 2026-07
         highlights:
-          - Carried multiple client iOS engagements — set architecture and acceptance criteria, directed AI agents.
-          - Took each project from kickoff to a first TestFlight build, owning provisioning, signing, and release.
-          - Shipped some apps fully SwiftUI, others on shared Kotlin Multiplatform modules.
+          - Carried multiple client iOS engagements concurrently — set architecture and acceptance criteria, directed AI agents.
+          - Kickoff to first TestFlight build in weeks per project, owning signing and release; SwiftUI or shared KMP modules.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
@@ -43,7 +42,7 @@ cv:
         start_date: 2024-06
         end_date: 2025-12
         highlights:
-          - Owned a production SwiftUI iOS app end to end, building state-driven UI with real-time updates (Combine, async/await).
+          - Owned a production SwiftUI iOS app end to end — state-driven UI with real-time updates (Combine, async/await).
           - Integrated TON blockchain and smart-contract state, parsing on-chain data and handling async updates.
 
       - company: "[Symplast](https://symplast.com)"
@@ -52,9 +51,9 @@ cv:
         start_date: 2021-10
         end_date: 2024-05
         highlights:
-          - "Built and maintained large-scale iOS/macOS healthcare apps used daily in US plastic-surgery clinics — [App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
-          - Built reactive data pipelines (Combine, Swift Concurrency, GCD) that cut UI bugs, race conditions, and crash rate.
-          - Implemented secure messaging, video calls, and offline-first synchronization.
+          - "Built iOS/macOS healthcare apps used daily in US plastic-surgery clinics — EHR, messaging, video consults ([App Store](https://apps.apple.com/us/app/symplast-practice/id965799573))."
+          - Led a 100k+ LoC Objective-C → Swift migration onto modular MVVM/Clean Architecture; cut crash rate ~40%.
+          - Built reactive data pipelines (Combine, Swift Concurrency, GCD) removing a class of race conditions; offline-first sync.
           - Drove code reviews and architectural decisions, mentoring junior developers.
 
       - company: "[Pro IT](https://proitr.ru)"
@@ -63,25 +62,24 @@ cv:
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Shipped multiple production iOS apps (UIKit, SnapKit) with reusable UI components, REST networking, and Fastlane CI.
+          - Shipped native iOS apps for enterprise and government clients (UIKit, REST); built reusable UI components.
+          - Automated build/test/release with Fastlane and CI; reviewed code and mentored junior developers.
 
     Technical Skills:
-      - label: Platforms
-        details: iOS, macOS, iPadOS
       - label: Languages & UI
-        details: Swift, SwiftUI, UIKit, Auto Layout, Kotlin Multiplatform (KMP)
+        details: Swift, SwiftUI, UIKit, Kotlin Multiplatform (KMP), Compose Multiplatform
       - label: Concurrency
-        details: Swift Concurrency (async/await, Actors, Sendable, MainActor), Combine, GCD, OperationQueue
+        details: Swift Concurrency (async/await, Actors, Sendable, MainActor), Combine, GCD
       - label: Architecture
-        details: MVVM, Clean Architecture, VIPER, modularization, SPM, CocoaPods
+        details: MVVM, Clean Architecture, modularization, SPM
       - label: Data & Networking
-        details: Core Data, SwiftData, SQLite, Keychain, offline-first sync, REST/URLSession, Alamofire, Codable
+        details: Core Data, SwiftData, SQLite, Keychain, offline-first sync, URLSession, Codable
       - label: Testing
-        details: XCTest, Swift Testing, unit & integration testing
+        details: XCTest, Swift Testing
       - label: Tooling & CI/CD
-        details: Xcode, Instruments, App Store Connect, TestFlight, code signing & provisioning, Fastlane, GitHub Actions, GitLab CI, Jenkins, Git
-      - label: AI-Assisted Delivery
-        details: Claude Code, spec-driven development, agent context engineering, guardrails & review protocol
+        details: Xcode, Instruments, App Store Connect, TestFlight, signing & notarization, Fastlane, GitHub Actions
+      - label: AI
+        details: Apple Foundation Models (on-device), Claude Code, spec-driven development, agent context engineering
       - label: Languages (spoken)
         details: English — professional working proficiency; Russian — native
 

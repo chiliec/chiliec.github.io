@@ -1,6 +1,6 @@
 cv:
   name: Vladimir Babin
-  headline: "AI Engineer — Building Products & Agents with Claude · Remote since 2015"
+  headline: "AI Engineer — LLM Products & Agents (Claude, on-device) · Remote since 2015"
   email: vovababin@gmail.com
   website: https://chiliec.github.io/portfolio
   social_networks:
@@ -13,8 +13,8 @@ cv:
 
   sections:
     Summary:
-      - Software engineer with 11 years shipping production apps, now building AI-powered products and autonomous agents on top of Claude — LLM app development, tool/function calling, prompt and context engineering, and Claude Code agent tooling.
-      - I ship end to end — from native/TypeScript clients to the model integration, agent orchestration, and the infra that runs them autonomously.
+      - Software engineer with 11 years shipping production apps, now building LLM-powered products and autonomous agents — Claude API tool use and structured output, context engineering, Claude Code agent tooling, on-device models.
+      - I ship end to end — clients, model integration, agent orchestration, and the infra that runs agents autonomously.
 
     Experience:
       - company: Independent
@@ -24,7 +24,7 @@ cv:
         end_date: present
         highlights:
           - Own architecture and specs, direct Claude Code agents through implementation — 10 public apps and developer tools shipped since Apr 2026 across Swift, Kotlin Multiplatform, and TypeScript.
-          - Build the agent context layer — conventions, review protocol, persistent session memory — and run self-hosted agents on scheduled, self-verifying tasks.
+          - Build the agent context layer — conventions, review protocol, session memory — and run self-hosted agents on scheduled, self-verifying tasks.
 
       - company: "[Axveer](https://axveer.com)"
         position: Software Engineer
@@ -32,7 +32,8 @@ cv:
         start_date: 2026-03
         end_date: 2026-07
         highlights:
-          - Delivered client apps across concurrent engagements, integrating backend/REST services and asynchronous data flow, with AI-assisted development throughout the delivery cycle.
+          - "Built and ran a Claude-powered Telegram + WhatsApp work-chat agent (TypeScript, Claude API tool use, Deepgram STT) — voice transcription, summaries, Linear issue drafting, image analysis, cited Q&A over chat history."
+          - Delivered client apps across concurrent engagements, integrating backend/REST services and asynchronous data flow.
 
       - company: "[Artwell](https://www.artwell.ru)"
         position: Senior iOS Developer
@@ -40,7 +41,7 @@ cv:
         start_date: 2024-06
         end_date: 2025-12
         highlights:
-          - Owned a production app end to end — state-driven UI with real-time updates, on-chain/smart-contract data and external services integrated with async updates.
+          - Owned a production app end to end — real-time state-driven UI, on-chain/smart-contract data and external services.
 
       - company: "[Symplast](https://symplast.com)"
         position: Senior iOS/macOS Developer
@@ -48,8 +49,8 @@ cv:
         start_date: 2021-10
         end_date: 2024-05
         highlights:
-          - "Built large-scale healthcare apps used daily in US clinics — [live on the App Store](https://apps.apple.com/us/app/symplast-practice/id965799573)."
-          - Drove crash-rate reduction, implemented secure messaging and offline-first sync, and mentored junior developers.
+          - "Built healthcare apps used daily in US clinics — EHR, secure messaging, video, offline-first sync ([App Store](https://apps.apple.com/us/app/symplast-practice/id965799573))."
+          - Led a 100k+ LoC Objective-C → Swift migration; cut crash rate ~40%; mentored junior developers.
 
       - company: "[Pro IT](https://proitr.ru)"
         position: iOS Developer
@@ -57,24 +58,24 @@ cv:
         start_date: 2015-02
         end_date: 2021-10
         highlights:
-          - Shipped multiple production apps and REST networking layers; automated build/test/release pipelines with Fastlane.
+          - Shipped native iOS apps for enterprise and government clients; internal tools in Python, Go, TypeScript, PHP.
 
     Selected AI Work:
-      - "[obsidian-memory](https://github.com/chiliec/obsidian-memory) — Claude Code plugin that auto-saves each agent session to an Obsidian vault and restores it as context next run (persistent agent memory)."
-      - "[ClaudeBar](https://github.com/chiliec/ClaudeBar) — native macOS menu-bar app surfacing Claude.ai usage at a glance (SwiftUI, Sparkle)."
+      - "[obsidian-memory](https://github.com/chiliec/obsidian-memory) — Claude Code plugin: saves each session to an Obsidian vault, restores it as context next run."
+      - "[TalkNative](https://github.com/chiliec/TalkNative) — on-device iOS text enhancer on Apple Foundation Models — zero servers, four tested Swift packages."
       - "[indonesian](https://github.com/chiliec/indonesian) — Claude-powered Telegram conversation partner: scenario role-play with voice (Deepgram STT + Google TTS)."
 
     Technical Skills:
       - label: AI / LLM
-        details: Claude API (Anthropic), tool/function calling, prompt & context engineering, RAG, structured output, streaming
+        details: Claude API, tool use & structured output, context engineering, cited retrieval Q&A, Apple Foundation Models (on-device)
       - label: Agents & Tooling
-        details: Claude Code plugins & skills, autonomous multi-agent orchestration, task delegation, MCP, cron-scheduled agents
+        details: Claude Code plugins & skills, multi-agent orchestration, task delegation, MCP, cron-scheduled agents
       - label: Languages
         details: TypeScript, JavaScript, Node.js, Python, Swift, Kotlin
       - label: Product & Web
-        details: React, Telegram bots & Mini Apps, REST API design, native iOS/macOS clients
+        details: React, Telegram & WhatsApp bots, Mini Apps, REST API design, native iOS/macOS clients
       - label: Data & Infra
-        details: SQLite, PostgreSQL, self-hosted deployment, GitHub Actions, GitLab CI, Git
+        details: MongoDB, SQLite, PostgreSQL, Docker/Kamal, self-hosted deployment, GitHub Actions, GitLab CI, Git
       - label: Languages (spoken)
         details: English — professional working proficiency; Russian — native
 
