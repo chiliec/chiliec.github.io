@@ -1,29 +1,33 @@
-<% const apps = (site.data && site.data.apps) || []; %>
-<article class="about-page apps-page">
-  <header class="about-header">
-    <h1 class="post-title"><%= page.title %></h1>
-    <% if (page.tagline) { %>
-      <div class="about-tagline"><%= page.tagline %></div>
-    <% } %>
-  </header>
-
-  <% if (apps.length) { %>
-  <ul class="apps-list">
-    <% apps.forEach(function(app) { %>
-      <li class="app">
-        <img class="app-icon" src="<%= app.icon %>" alt="<%= app.name %>" width="64" height="64" loading="lazy">
-        <div class="app-body">
-          <h2 class="app-name"><%= app.name %></h2>
-          <p class="app-tagline"><%= app.tagline %></p>
-          <p class="app-meta"><%= app.genre %> · iOS <%= app.minOS %>+ · v<%= app.version %> · updated <%= app.updated %></p>
-          <a class="app-link" href="<%= app.url %>" target="_blank" rel="noopener">View on the App Store →</a>
-        </div>
-      </li>
+<% var apps = (site.data && site.data.apps) || []; %>
+<section class="apps-hero" aria-labelledby="apps-title">
+  <p class="eyebrow" data-hero><%= apps.length %> apps · App Store</p>
+  <h1 id="apps-title" class="display apps-title" data-split data-hero><%= page.title %><% if (page.tagline) { %> — <em><%= page.tagline %></em><% } %></h1>
+  <ul class="apps-icons" data-hero>
+    <% apps.forEach(function (a) { %>
+      <li><a href="#app-<%= a.id %>"><img src="<%= a.icon %>" alt="<%= a.name %>" width="96" height="96"></a></li>
     <% }) %>
   </ul>
-  <% } %>
+</section>
 
-  <p class="apps-all">
-    <a href="https://apps.apple.com/developer/id1557125814" target="_blank" rel="noopener">All apps on the App Store →</a>
-  </p>
-</article>
+<% apps.forEach(function (a, n) { %>
+  <section class="app-feature" id="app-<%= a.id %>" aria-labelledby="app-<%= a.id %>-name">
+    <div class="section-mark"><span><%= String(n + 1).padStart(2, '0') %> / <%= a.genre %></span><span>iOS <%= a.minOS %>+ · v<%= a.version %> · updated <%= a.updated %></span></div>
+    <div class="app-feature-grid">
+      <div class="app-feature-copy">
+        <img class="app-feature-icon" src="<%= a.icon %>" alt="" width="72" height="72" loading="lazy">
+        <h2 id="app-<%= a.id %>-name" class="display app-feature-name" data-split><%= a.name %></h2>
+        <p class="app-feature-tagline"><%= a.tagline %></p>
+        <a class="button button--solid" href="<%= a.url %>" target="_blank" rel="noopener">View on the App Store →<span class="visually-hidden"> (opens in new tab)</span></a>
+      </div>
+      <div class="app-shots">
+        <% (a.screenshots || []).forEach(function (src, i) { %>
+          <img src="<%= src %>" alt="<%= a.name %> screenshot <%= i + 1 %>" width="480" height="1043" loading="lazy" decoding="async" data-parallax>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+<% }) %>
+
+<p class="apps-all">
+  <a class="button" href="https://apps.apple.com/developer/id1557125814" target="_blank" rel="noopener">All apps on the App Store →<span class="visually-hidden"> (opens in new tab)</span></a>
+</p>
