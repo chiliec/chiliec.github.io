@@ -1,60 +1,47 @@
-<article class="about-page">
-  <header class="about-header">
-    <h1 class="post-title"><%= page.title %></h1>
-    <% if (page.tagline) { %>
-      <div class="about-tagline"><%= page.tagline %></div>
-    <% } %>
-  </header>
-
-  <% if (page.sections && page.sections.about) { %>
-    <section class="about-section">
-      <h2><%= page.sections.about.title %></h2>
-      <% if (page.sections.about.intro) { %>
-        <p><%= page.sections.about.intro %></p>
-      <% } %>
-      <% if (page.sections.about.philosophy) { %>
-        <p class="about-philosophy"><em><%= page.sections.about.philosophy %></em></p>
-      <% } %>
-    </section>
+<% var s = page.sections || {}; %>
+<section class="about-hero" aria-labelledby="about-title">
+  <p class="eyebrow" data-hero><%= page.tagline %></p>
+  <h1 id="about-title" class="display about-title" data-split data-hero><%= page.title %></h1>
+  <% if (s.about) { %>
+    <p class="about-lede" data-hero><%= s.about.intro %></p>
+    <% if (s.about.philosophy) { %><p class="about-philosophy" data-hero><em><%= s.about.philosophy %></em></p><% } %>
   <% } %>
+</section>
 
-  <% if (page.sections && page.sections.drives) { %>
-    <section class="about-section">
-      <h2><%= page.sections.drives.title %></h2>
-      <% (page.sections.drives.paragraphs || []).forEach(function(p) { %>
-        <%- markdown(p) %>
-      <% }) %>
-    </section>
-  <% } %>
+<% if (s.drives) { %>
+<section class="about-section" aria-labelledby="drives-title">
+  <div class="section-mark"><span>01 / <%= s.drives.title %></span></div>
+  <h2 id="drives-title" class="visually-hidden"><%= s.drives.title %></h2>
+  <div class="about-prose" data-stagger>
+    <% (s.drives.paragraphs || []).forEach(function (p) { %><%- markdown(p) %><% }) %>
+  </div>
+</section>
+<% } %>
 
-  <% if (page.sections && page.sections.interests) { %>
-    <section class="about-section">
-      <h2><%= page.sections.interests.title %></h2>
-      <ul class="interests-grid">
-        <% (page.sections.interests.items || []).forEach(function(item) { %>
-          <li class="interest">
-            <span class="interest-emoji"><%= item.emoji %></span>
-            <span class="interest-name"><%= item.name %></span>
-            <span class="interest-desc"><%= item.description %></span>
-          </li>
-        <% }) %>
-      </ul>
-    </section>
-  <% } %>
+<% if (s.interests) { %>
+<section class="about-section" aria-labelledby="interests-title">
+  <div class="section-mark"><span>02 / <%= s.interests.title %></span></div>
+  <h2 id="interests-title" class="visually-hidden"><%= s.interests.title %></h2>
+  <ul class="interests-grid" data-stagger>
+    <% (s.interests.items || []).forEach(function (item) { %>
+      <li class="interest">
+        <% if (item.icon) { %><%- partial('_partial/icon', { name: item.icon }) %><% } %>
+        <span class="interest-name"><%= item.name %></span>
+        <span class="interest-desc"><%= item.description %></span>
+      </li>
+    <% }) %>
+  </ul>
+</section>
+<% } %>
 
-  <% if (page.sections && page.sections.contact) { %>
-    <section class="about-section">
-      <h2><%= page.sections.contact.title %></h2>
-      <% if (page.sections.contact.intro) { %>
-        <p><%= page.sections.contact.intro %></p>
-      <% } %>
-      <ul class="contact-links">
-        <% (page.sections.contact.links || []).forEach(function(link) { %>
-          <li>
-            <a href="<%= link.url %>"<% if (link.target) { %> target="<%= link.target %>" rel="noopener"<% } %>><%= link.name %></a>
-          </li>
-        <% }) %>
-      </ul>
-    </section>
-  <% } %>
-</article>
+<% if (s.contact) { %>
+<section class="about-section" aria-labelledby="contact-title">
+  <div class="section-mark"><span>03 / <%= s.contact.title %></span></div>
+  <h2 id="contact-title" class="display section-title" data-split><%= s.contact.intro %></h2>
+  <p class="hero-cta">
+    <% (s.contact.links || []).forEach(function (link, i) { %>
+      <a class="button<%= i === 0 ? ' button--solid' : '' %>" href="<%= link.url %>"<% if (link.target) { %> target="<%= link.target %>" rel="noopener"<% } %>><%= link.name %></a>
+    <% }) %>
+  </p>
+</section>
+<% } %>

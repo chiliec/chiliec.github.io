@@ -19,22 +19,22 @@ sections:
   interests:
     title: Interests
     items:
-      - emoji: 🚴
+      - icon: bicycling-linear
         name: Cycling
         description: Thinking on the move.
-      - emoji: 🏊
+      - icon: swimming-linear
         name: Swimming
         description: Mental reset.
-      - emoji: 🤸
+      - icon: running-round-linear
         name: Capoeira
         description: Movement, rhythm, control.
-      - emoji: 🎸
+      - icon: music-note-linear
         name: Music
         description: Guitar and voice.
-      - emoji: 🐱
+      - icon: cat-linear
         name: Cat
         description: Constant presence.
-      - emoji: 💻
+      - icon: code-linear
         name: Building things
         description: App Store apps, agents, tools, integrations.
 
