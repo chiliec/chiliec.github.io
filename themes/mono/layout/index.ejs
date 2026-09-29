@@ -1,11 +1,63 @@
-<section class="site-intro">
-  <p>iOS and macOS engineer, 10+ years shipping production Apple software. Swift, SwiftUI, UIKit; lately architecture-led delivery with AI agents.</p>
+<%
+  var apps = (site.data && site.data.apps) || [];
+  var hero = apps.filter(function (a) { return a.screenshots && a.screenshots.length; }).slice(0, 3);
+%>
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <p class="eyebrow" data-hero>Senior engineer · Apple platforms</p>
+    <h1 id="hero-title" class="display hero-title" data-split data-hero>Apple platforms, <em>shipped</em> with agents.</h1>
+    <p class="hero-pitch" data-hero>10+ years building for iOS and macOS. I design the architecture and write the specs, then direct AI agents to deliver them under review. <%= apps.length %> apps of my own are live on the App Store.</p>
+    <p class="hero-cta" data-hero>
+      <a class="button button--solid" href="<%- url_for('/apps/') %>">See the apps →</a>
+      <a class="button" href="<%- url_for('/cv/Vladimir_Babin_CV.pdf') %>">Download CV</a>
+    </p>
+  </div>
+  <div class="fan" aria-hidden="true">
+    <% hero.forEach(function (a, i) { %>
+      <div class="fan-card" data-hero>
+        <img src="<%= a.screenshots[0] %>" alt="" width="480" height="1043" <%- i === 1 ? 'fetchpriority="high"' : '' %> decoding="async">
+      </div>
+    <% }) %>
+  </div>
 </section>
-<ul class="post-list">
-  <% site.posts.sort('date', -1).each(function(post) { %>
-    <li class="post-list-item">
-      <%- partial('_partial/post-meta', { post: post }) %>
-      <a class="post-list-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-    </li>
-  <% }) %>
-</ul>
+
+<section class="home-section" aria-labelledby="work-title">
+  <div class="section-mark"><span>01 / Selected work</span><span><%= apps.length %> apps</span></div>
+  <h2 id="work-title" class="display section-title" data-split>Shipped to the App Store.</h2>
+  <ul class="work-list" data-stagger>
+    <% apps.forEach(function (a) { %>
+      <li class="work-item">
+        <img class="work-icon" src="<%= a.icon %>" alt="" width="64" height="64" loading="lazy">
+        <div>
+          <h3 class="work-name"><a href="<%= a.url %>" target="_blank" rel="noopener"><%= a.name %><span class="visually-hidden"> on the App Store (opens in new tab)</span></a></h3>
+          <p class="work-tagline"><%= a.tagline %></p>
+        </div>
+        <span class="work-genre"><%= a.genre %></span>
+      </li>
+    <% }) %>
+  </ul>
+  <p><a class="button" href="<%- url_for('/apps/') %>">All apps, with screenshots →</a></p>
+</section>
+
+<section class="home-section" aria-labelledby="writing-title">
+  <div class="section-mark"><span>02 / Writing</span><span>mostly in Russian</span></div>
+  <h2 id="writing-title" class="display section-title" data-split>Notes from the work.</h2>
+  <ul class="post-list" data-stagger>
+    <% site.posts.sort('date', -1).each(function (post) { %>
+      <li class="post-list-item">
+        <%- partial('_partial/post-meta', { post: post }) %>
+        <a class="post-list-title" href="<%- url_for(post.path) %>" lang="<%= post.lang || config.language %>"><%= post.title %></a>
+      </li>
+    <% }) %>
+  </ul>
+</section>
+
+<section class="home-section contact" aria-labelledby="contact-title">
+  <div class="section-mark"><span>03 / Contact</span><span>Bali · Remote</span></div>
+  <h2 id="contact-title" class="display section-title" data-split>Let's talk about your <em>next</em> app.</h2>
+  <p class="hero-cta">
+    <a class="button button--solid" href="mailto:vovababin@gmail.com">vovababin@gmail.com</a>
+    <a class="button" href="https://t.me/babin" target="_blank" rel="noopener">Telegram</a>
+    <a class="button" href="<%- url_for('/cv/Vladimir_Babin_CV.pdf') %>">CV (PDF)</a>
+  </p>
+</section>

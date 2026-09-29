@@ -1,0 +1,162 @@
+.visually-hidden
+  position absolute
+  width 1px
+  height 1px
+  overflow hidden
+  clip-path inset(50%)
+  white-space nowrap
+
+// Lenis-recommended rules
+html.lenis, html.lenis body
+  height auto
+.lenis.lenis-smooth
+  scroll-behavior auto !important
+.lenis.lenis-stopped
+  overflow hidden
+
+// ---------- Hero ----------
+.hero
+  display grid
+  grid-template-columns 1.25fr 1fr
+  gap clamp(1.5rem, 4vw, 4rem)
+  align-items center
+  min-height min(78vh, 760px)
+  padding var(--space-xl) 0 calc(var(--space-xl) * 2)
+
+.hero-title
+  font-size var(--step-hero)
+  margin var(--space-md) 0 var(--space-lg)
+
+.hero-pitch
+  font-family var(--font-body)
+  font-size 18px
+  line-height 1.6
+  max-width 36em
+  margin 0 0 var(--space-lg)
+
+.hero-cta
+  display flex
+  flex-wrap wrap
+  gap var(--space-sm)
+  margin 0
+
+// Fan of three phone screenshots. CSS owns the resting pose (card
+// transform); motion.js moves only the inner img, so they never fight.
+.fan
+  position relative
+  aspect-ratio 1 / 1.15
+  max-width 460px
+  width 100%
+  justify-self center
+
+.fan-card
+  position absolute
+  top 6%
+  width 46%
+  img
+    display block
+    width 100%
+    height auto
+    aspect-ratio 600 / 1304
+    border-radius 18px
+    box-shadow 0 24px 60px rgba(0,0,0,.22)
+    background var(--code-bg)
+
+.fan-card:nth-child(1)
+  left 0
+  transform rotate(-8deg)
+.fan-card:nth-child(2)
+  left 27%
+  top 0
+  z-index 2
+  transform rotate(-1.5deg)
+.fan-card:nth-child(3)
+  left 54%
+  top 9%
+  z-index 3
+  transform rotate(6deg)
+
+// Hidden only when head.ejs flagged motion; failsafe reveals after 3 s if
+// motion.js never runs (CSS animations beat GSAP's inline styles, and by
+// 3 s the intro is finished, so this is a no-op in the normal path).
+.js-motion [data-hero]
+  visibility hidden
+  animation reveal-failsafe 0s 3s forwards
+
+@keyframes reveal-failsafe
+  to
+    visibility visible
+
+// ---------- Sections ----------
+.home-section
+  padding calc(var(--space-xl) * 2) 0 0
+
+.section-title
+  font-size var(--step-h2)
+  margin 0 0 var(--space-xl)
+  max-width 16em
+
+.work-list
+  list-style none
+  padding 0
+  margin 0 0 var(--space-xl)
+
+.work-item
+  display grid
+  grid-template-columns 64px 1fr auto
+  gap var(--space-lg)
+  align-items center
+  padding var(--space-lg) 0
+  border-top 1px solid var(--rule)
+  transition transform .25s ease
+  &:hover
+    transform translateX(6px)
+
+.work-icon
+  width 64px
+  height 64px
+  border-radius 14px
+
+.work-name
+  font-family var(--font-display)
+  font-weight 400
+  font-size clamp(1.5rem, 1rem + 1.5vw, 2.1rem)
+  margin 0
+  line-height 1.1
+  a
+    text-decoration none
+    background linear-gradient(var(--accent), var(--accent)) 0 100% / 0 1px no-repeat
+    transition background-size .3s ease
+  a:hover, a:focus-visible
+    background-size 100% 1px
+    color var(--fg)
+
+.work-tagline
+  margin var(--space-xs) 0 0
+  color var(--muted)
+  font-size 15px
+  max-width 48em
+
+.work-genre
+  font-family var(--font-mono)
+  font-size 11px
+  color var(--muted)
+  text-transform uppercase
+  letter-spacing .06em
+
+.contact
+  padding-bottom calc(var(--space-xl) * 2)
+
+@media (max-width: 800px)
+  .hero
+    grid-template-columns 1fr
+    min-height 0
+  .fan
+    max-width 340px
+  .work-item
+    grid-template-columns 48px 1fr
+  .work-icon
+    width 48px
+    height 48px
+  .work-genre
+    display none
