@@ -16,7 +16,7 @@ const day = (iso) => (iso || '').slice(0, 10);
 
 // Lookup returns fixed-size thumbs (e.g. /392x696bb.jpg); swap the size
 // segment for a 480px-wide, aspect-preserving variant.
-const shot = (u) => u.replace(/\/[^/]+$/, '/480x0w.jpg');
+const shot = (u) => u.replace(/\/[^/]+$/, '/480x0w.webp');
 
 async function main() {
   const res = await fetch(URL_, { signal: AbortSignal.timeout(15000) });
