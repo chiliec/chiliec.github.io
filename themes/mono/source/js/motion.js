@@ -81,17 +81,19 @@
   // --- Lists: children rise in sequence ---
   gsap.utils.toArray('[data-stagger]').forEach(function (list) {
     gsap.from(list.children, {
-      y: 24, autoAlpha: 0, duration: 0.6, stagger: 0.07, ease: ease,
+      y: 24, autoAlpha: 0, duration: 0.6, stagger: 0.07, ease: ease, clearProps: 'transform',
       scrollTrigger: { trigger: list, start: 'top 85%', once: true }
     });
   });
 
-  // --- Apps page: gentle scrubbed parallax on alternating screenshots ---
-  gsap.utils.toArray('[data-parallax]').forEach(function (el, i) {
-    var d = i % 2 ? 6 : -6;
-    gsap.fromTo(el, { yPercent: -d }, {
-      yPercent: d, ease: 'none',
-      scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true }
+  // --- Apps page: gentle scrubbed parallax on alternating screenshots (desktop only) ---
+  gsap.matchMedia().add('(min-width: 801px)', function () {
+    gsap.utils.toArray('[data-parallax]').forEach(function (el, i) {
+      var d = i % 2 ? 6 : -6;
+      gsap.fromTo(el, { yPercent: -d }, {
+        yPercent: d, ease: 'none',
+        scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true }
+      });
     });
   });
 
