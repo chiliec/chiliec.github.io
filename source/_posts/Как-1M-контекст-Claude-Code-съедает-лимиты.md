@@ -1,5 +1,6 @@
 ---
 title: Как 1M-контекст Claude Code съедает лимиты в 3-4 раза быстрее
+lang: ru
 date: 2026-04-03 23:00:00
 tags: [claude-code, ai, llm]
 categories:
