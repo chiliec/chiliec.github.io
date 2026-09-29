@@ -1,4 +1,5 @@
 title: Получение индекса элемента при переборе массива в Swift
+lang: ru
 date: 2015-09-05 13:28:59
 tags: [swift]
 categories:

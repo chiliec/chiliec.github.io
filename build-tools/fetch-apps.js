@@ -14,6 +14,10 @@ const OUT = path.join(__dirname, '..', 'source', '_data', 'apps.json');
 
 const day = (iso) => (iso || '').slice(0, 10);
 
+// Lookup returns fixed-size thumbs (e.g. /392x696bb.jpg); swap the size
+// segment for a 480px-wide, aspect-preserving variant.
+const shot = (u) => u.replace(/\/[^/]+$/, '/480x0w.webp');
+
 async function main() {
   const res = await fetch(URL_, { signal: AbortSignal.timeout(15000) });
   if (!res.ok) throw new Error(`HTTP ${res.status}`);
@@ -25,6 +29,9 @@ async function main() {
       name: r.trackName,
       url: r.trackViewUrl.replace(/\?uo=\d+$/, ''),
       icon: r.artworkUrl512 || r.artworkUrl100,
+      screenshots: ((r.screenshotUrls || []).length ? r.screenshotUrls : r.ipadScreenshotUrls || [])
+        .slice(0, 3)
+        .map(shot),
       tagline: (r.description || '').split('\n')[0].trim(),
       genre: r.primaryGenreName,
       minOS: r.minimumOsVersion,
@@ -34,6 +41,8 @@ async function main() {
     }))
     .sort((a, b) => (a.released < b.released ? 1 : -1));
   if (apps.length === 0) throw new Error('no software records');
+  const bare = apps.find((a) => a.screenshots.length === 0);
+  if (bare) throw new Error(`no screenshots for ${bare.name}`);
   fs.mkdirSync(path.dirname(OUT), { recursive: true });
   fs.writeFileSync(OUT, JSON.stringify(apps, null, 2) + '\n');
   console.log(`fetch-apps: wrote ${apps.length} apps to ${path.relative(process.cwd(), OUT)}`);

@@ -3,19 +3,29 @@
     "id": 6801866165,
     "name": "BaliSurf",
     "url": "https://apps.apple.com/us/app/balisurf/id6801866165",
-    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/13/14/2f/13142fe4-4bab-7c7a-65be-ee456b36b0d3/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a5/8a/5d/a58a5d58-0ad1-c5ef-c9ed-7c44f092b9a9/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/1a/4a/ab/1a4aab83-ef02-b6e0-f09a-6e832b8dd61e/01-list.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/96/8d/7f/968d7f73-349e-2f32-471a-9f1e80b1fbee/02-detail.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/ef/d0/46/efd046ab-a79e-21da-5cf7-6c6b369e82c7/03-reef-tides.png/480x0w.webp"
+    ],
     "tagline": "BaliSurf answers one question for 20 named reef breaks in Bali, Nusa Lembongan and Lombok: is it worth paddling out, and when?",
     "genre": "Sports",
     "minOS": "16.0",
-    "version": "1.0.1",
-    "released": "2026-09-15",
-    "updated": "2026-09-16"
+    "version": "1.0.3",
+    "released": "2026-09-16",
+    "updated": "2026-09-18"
   },
   {
     "id": 6796242315,
     "name": "Callback: Interview Prep",
     "url": "https://apps.apple.com/us/app/callback-interview-prep/id6796242315",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/2a/09/7d/2a097da5-1bb0-45ce-3080-9cb50d7da441/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/c5/68/ae/c568ae82-ea22-5647-fcf5-4b1626d85065/01-home.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/8b/07/96/8b0796fb-c4b9-6d82-9786-c93c0bb05883/02-topics.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d8/91/30/d8913061-6293-0fb5-faea-9e8e5f3c3504/03-topic-detail.png/480x0w.webp"
+    ],
     "tagline": "Callback prepares you for iOS developer interviews — on the train, in a waiting room, or the night before the real thing. Everything works offline. There is no account to create, nothing to sign in to, and no network connection required.",
     "genre": "Education",
     "minOS": "18.0",
@@ -28,6 +38,11 @@
     "name": "SLOVO: Russian Phrases",
     "url": "https://apps.apple.com/us/app/slovo-russian-phrases/id6796900036",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b5/3b/c5/b53bc54b-8a1e-81cb-a9b9-2cab4f921a71/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/46/2b/c4/462bc423-79d9-b624-e24b-5df02b37a8e4/01-home.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/bb/fc/63/bbfc631d-970e-0a8b-2c4c-2c29c29733aa/01-home.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/3d/52/50/3d525014-d3dd-569a-6273-108a4b83a60b/02-study.png/480x0w.webp"
+    ],
     "tagline": "SLOVO is a gamified phrasebook trainer for people who enjoy Russian and want to pick up genuinely useful words and phrases — no grammar drills, no pressure.",
     "genre": "Education",
     "minOS": "16.0",
@@ -40,6 +55,11 @@
     "name": "Lancar",
     "url": "https://apps.apple.com/us/app/lancar/id6795209576",
     "icon": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/0d/a1/8a/0da18a7a-439f-0b76-361e-34723fdf9e0f/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.jpg",
+    "screenshots": [
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/f5/fb/3b/f5fb3b05-0235-59b0-b22e-1517dfb82185/01-beranda.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/51/57/dc/5157dca1-036f-22a4-e2ff-e13b34948051/02-kartu-modules.png/480x0w.webp",
+      "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/43/b0/f9/43b0f938-f5cb-548a-a688-7d1eb6845f63/03-kartu-card-front.png/480x0w.webp"
+    ],
     "tagline": "Lancar — learn Indonesian vocabulary, anywhere.",
     "genre": "Education",
     "minOS": "16.0",

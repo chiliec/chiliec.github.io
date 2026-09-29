@@ -15,7 +15,7 @@
 <meta property="og:title" content="<%= page.title || config.title %>">
 <meta property="og:description" content="<%= desc %>">
 <meta property="og:url" content="<%= full_url_for(page.path) %>">
-<meta property="og:locale" content="ru_RU">
+<meta property="og:locale" content="<%= (page.lang || config.language) === 'ru' ? 'ru_RU' : 'en_US' %>">
 <meta property="og:image" content="<%= image %>">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -24,6 +24,13 @@
 <meta name="twitter:title" content="<%= page.title || config.title %>">
 <meta name="twitter:description" content="<%= desc %>">
 
+<link rel="preload" href="<%- url_for('/fonts/InstrumentSerif-Regular.woff2') %>" as="font" type="font/woff2" crossorigin>
+<% if (locals.motion) { %>
+<script>
+  // Hide hero pieces only when motion.js will animate them in.
+  if (!matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.classList.add('js-motion');
+</script>
+<% } %>
 <link rel="stylesheet" href="<%- url_for('/css/style.css') %>">
 <link rel="icon" href="<%- url_for('/favicon.svg') %>" type="image/svg+xml">
 <link rel="alternate" type="application/atom+xml" title="<%= config.title %>" href="<%- url_for('/atom.xml') %>">

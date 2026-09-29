@@ -1,44 +1,73 @@
-.apps-list
+.apps-hero
+  padding var(--space-xl) 0 calc(var(--space-xl) * 2)
+
+.apps-title
+  font-size var(--step-hero)
+  margin var(--space-md) 0 var(--space-xl)
+  max-width 14em
+
+.apps-icons
+  display flex
+  flex-wrap wrap
+  gap var(--space-md)
   list-style none
   padding 0
-  margin 0 0 var(--space-xl)
+  margin 0
+  img
+    display block
+    width 96px
+    height 96px
+    border-radius 22px
+    box-shadow 0 10px 30px rgba(0,0,0,.15)
+    transition transform .25s ease
+  a:hover img, a:focus-visible img
+    transform translateY(-4px)
 
-.app
+.app-feature
+  padding calc(var(--space-xl) * 2) 0 0
+
+.app-feature-grid
   display grid
-  grid-template-columns 64px 1fr
-  column-gap var(--space-md)
-  padding var(--space-md) 0
-  border-bottom 1px dashed var(--rule)
+  grid-template-columns 1fr 1.4fr
+  gap clamp(1.5rem, 4vw, 4rem)
+  align-items center
 
-.app-icon
-  border-radius 14px
-  width 64px
-  height 64px
+.app-feature-icon
+  width 72px
+  height 72px
+  border-radius 16px
 
-.app-name
-  font-family var(--font-body)
-  font-size 20px
-  margin 0 0 var(--space-xs)
+.app-feature-name
+  font-size var(--step-h2)
+  margin var(--space-md) 0
 
-.app-name a
-  color var(--fg)
-  text-decoration none
+.app-feature-tagline
+  font-size 17px
+  line-height 1.6
+  margin 0 0 var(--space-lg)
+  max-width 32em
 
-.app-tagline
-  margin 0 0 var(--space-xs)
-
-.app-meta
-  font-family var(--font-mono)
-  font-size 11px
-  color var(--muted)
-  margin 0 0 var(--space-xs)
-
-.app-link, .apps-all a
-  font-family var(--font-mono)
-  font-size 12px
-  color var(--accent)
-  text-decoration none
+.app-shots
+  display grid
+  grid-template-columns repeat(3, 1fr)
+  gap var(--space-md)
+  img
+    width 100%
+    height auto
+    aspect-ratio 600 / 1304
+    border-radius 16px
+    box-shadow 0 18px 44px rgba(0,0,0,.18)
+    background var(--code-bg)
 
 .apps-all
-  font-family var(--font-mono)
-  font-size 12px
+  padding calc(var(--space-xl) * 2) 0
+
+@media (max-width: 800px)
+  .app-feature-grid
+    grid-template-columns 1fr
+  .app-shots
+    grid-template-columns repeat(3, 70%)
+    overflow-x auto
+    scroll-snap-type x mandatory
+    img
+      scroll-snap-align start
