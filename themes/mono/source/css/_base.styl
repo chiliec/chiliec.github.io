@@ -12,6 +12,20 @@
   font-style normal
   font-display swap
 
+@font-face
+  font-family 'Instrument Serif'
+  src url('/fonts/InstrumentSerif-Regular.woff2') format('woff2')
+  font-weight 400
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'Instrument Serif'
+  src url('/fonts/InstrumentSerif-Italic.woff2') format('woff2')
+  font-weight 400
+  font-style italic
+  font-display swap
+
 *, *::before, *::after
   box-sizing border-box
 
@@ -40,3 +54,68 @@ h1, h2, h3, h4, h5, h6
   font-family var(--font-mono)
   font-weight 700
   line-height 1.3
+
+:focus-visible
+  outline 2px solid var(--accent)
+  outline-offset 3px
+
+.skip-link
+  position absolute
+  left var(--space-md)
+  top -100px
+  padding var(--space-sm) var(--space-md)
+  background var(--fg)
+  color var(--bg)
+  font-family var(--font-mono)
+  font-size 13px
+  z-index 100
+  &:focus
+    top var(--space-md)
+
+.display
+  font-family var(--font-display)
+  font-weight 400
+  letter-spacing -0.02em
+  line-height 0.98
+  em
+    font-style italic
+    color var(--accent)
+
+.eyebrow, .section-mark
+  font-family var(--font-mono)
+  font-size 12px
+  letter-spacing 0.06em
+  text-transform uppercase
+  color var(--muted)
+
+.section-mark
+  display flex
+  justify-content space-between
+  border-top 1px solid var(--rule)
+  padding-top var(--space-sm)
+  margin-bottom var(--space-xl)
+
+.button
+  display inline-block
+  font-family var(--font-mono)
+  font-size 13px
+  padding 0.7rem 1.1rem
+  border 1px solid var(--fg)
+  color var(--fg)
+  text-decoration none
+  transition background .2s, color .2s
+  &:hover
+    background var(--fg)
+    color var(--bg)
+
+.button--solid
+  background var(--fg)
+  color var(--bg)
+  &:hover
+    background var(--accent)
+    border-color var(--accent)
+    color var(--bg)
+
+@media (prefers-reduced-motion: reduce)
+  *
+    transition none !important

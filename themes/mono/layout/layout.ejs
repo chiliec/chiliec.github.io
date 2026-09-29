@@ -1,15 +1,26 @@
+<%
+  var motion = is_home() || page.layout === 'about' || page.layout === 'apps';
+%>
 <!DOCTYPE html>
 <html lang="<%= page.lang || config.language %>">
   <head>
-    <%- partial('_partial/head') %>
+    <%- partial('_partial/head', { motion: motion }) %>
   </head>
-  <body>
+  <body class="<%= motion ? 'is-wide' : '' %>">
+    <a class="skip-link" href="#main">Skip to content</a>
     <div class="site-container">
       <%- partial('_partial/header') %>
-      <main class="site-main">
+      <main class="site-main" id="main" tabindex="-1">
         <%- body %>
       </main>
       <%- partial('_partial/footer') %>
     </div>
+    <% if (motion) { %>
+      <script defer src="<%- url_for('/js/vendor/gsap.min.js') %>"></script>
+      <script defer src="<%- url_for('/js/vendor/ScrollTrigger.min.js') %>"></script>
+      <script defer src="<%- url_for('/js/vendor/SplitText.min.js') %>"></script>
+      <script defer src="<%- url_for('/js/vendor/lenis.min.js') %>"></script>
+      <script defer src="<%- url_for('/js/motion.js') %>"></script>
+    <% } %>
   </body>
 </html>

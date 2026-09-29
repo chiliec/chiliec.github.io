@@ -1,9 +1,9 @@
 <header class="site-header">
-  <a class="site-name" href="<%- url_for('/') %>"><%= theme.signature %></a>
-  <nav class="site-nav">
+  <a class="site-name" href="<%- url_for('/') %>">Vladimir Babin</a>
+  <nav class="site-nav" aria-label="Main">
     <% for (var label in theme.menu) { %>
-      <a href="<%- url_for(theme.menu[label]) %>"><%= label %></a>
+      <a href="<%- url_for(theme.menu[label]) %>"<% if (url_for(theme.menu[label]) === url_for(page.path).replace(/index\.html$/, '')) { %> aria-current="page"<% } %>><%= label %></a>
     <% } %>
-    <button type="button" class="theme-toggle" aria-label="toggle theme" aria-pressed="false">◐</button>
+    <button type="button" class="theme-toggle" aria-label="Toggle dark theme" aria-pressed="false">◐</button>
   </nav>
 </header>
