@@ -7,7 +7,6 @@ tmp/
 coverage/
 db.json
 source/cv/rendercv_output/*
-/.superpowers/
 .claude/*
 /.venv/
 /out/

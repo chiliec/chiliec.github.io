@@ -1,5 +1,0 @@
-User-agent: Yandex
-Host: chiliec.github.io
-
-User-agent: *
-Sitemap: https://chiliec.github.io/sitemap.xml
