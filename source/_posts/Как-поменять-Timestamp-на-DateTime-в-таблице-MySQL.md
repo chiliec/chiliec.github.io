@@ -1,3 +1,4 @@
+published: false
 title: Как поменять Timestamp на DateTime в таблице MySQL
 lang: ru
 date: 2014-08-23 19:18:56
