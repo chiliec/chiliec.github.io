@@ -4,7 +4,7 @@ date: 2026-09-25 10:00:00
 tags: [godot, ios, android, ci]
 categories:
 ---
-I wrote about the [fastlane and GitHub Actions pipeline](/post/Shipping-a-Kotlin-Multiplatform-app-to-the-App-Store-with-fastlane/) I use for Kotlin Multiplatform apps. A mobile game I'm shipping in Godot 4.7 needed the same result — push a tag, get a build on TestFlight and the Play internal track — but almost none of the plumbing carries over, because there's no Xcode project or Gradle project sitting in git to sign. Godot generates both from scratch on every export. <!-- more -->
+I wrote about the [fastlane and GitHub Actions pipeline](/post/Shipping-a-Kotlin-Multiplatform-app-to-the-App-Store-with-fastlane/) I use for Kotlin Multiplatform apps. [Escape Roguelike](https://escaperoguelike.com), a mobile game I'm shipping in Godot 4.7, needed the same result — push a tag, get a build on TestFlight and the Play internal track — but almost none of the plumbing carries over, because there's no Xcode project or Gradle project sitting in git to sign. Godot generates both from scratch on every export. <!-- more -->
 
 ## No project to check in
 
