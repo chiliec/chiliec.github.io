@@ -43,13 +43,16 @@
   <div class="section-mark"><span>02 / Writing</span><span><%= site.posts.length %> posts</span></div>
   <h2 id="writing-title" class="display section-title" data-split>Notes from the work.</h2>
   <ul class="post-list" data-stagger>
-    <% site.posts.sort('date', -1).each(function (post) { %>
+    <% site.posts.sort('date', -1).limit(10).each(function (post) { %>
       <li class="post-list-item">
         <%- partial('_partial/post-meta', { post: post }) %>
         <a class="post-list-title" href="<%- url_for(post.path) %>" lang="<%= post.lang || config.language %>"><%= post.title %></a>
       </li>
     <% }) %>
   </ul>
+  <% if (site.posts.length > 10) { %>
+  <p><a class="button" href="<%- url_for('/archives/') %>">All posts →</a></p>
+  <% } %>
 </section>
 
 <section class="home-section contact" aria-labelledby="contact-title">
