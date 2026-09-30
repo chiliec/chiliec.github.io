@@ -23,7 +23,7 @@ cv:
         start_date: 2026-07
         end_date: present
         highlights:
-          - "Shipped three Kotlin Multiplatform / Compose apps for iOS and Android in two months — [BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app) — shared Kotlin UI and logic, platform-native shells, tests in CI, fastlane lanes for App Store and Google Play."
+          - "Shipped three Kotlin Multiplatform / Compose apps for iOS and Android in ten weeks — [BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app) — shared Kotlin UI and logic, platform-native shells, tests in CI, fastlane lanes for App Store and Google Play."
           - "Ship native Apple apps alongside — [Callback](https://github.com/chiliec/Callback) (SwiftUI/SwiftData), [TalkNative](https://github.com/chiliec/TalkNative) (iOS, on-device AI), [ClaudeBar](https://github.com/chiliec/ClaudeBar) (macOS)."
 
       - company: "[Axveer](https://axveer.com)"

@@ -23,7 +23,7 @@ cv:
         start_date: 2026-07
         end_date: present
         highlights:
-          - "Took four apps from idea to the App Store in two months — three on Kotlin Multiplatform/Compose for iOS and Android ([BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app)), one pure SwiftUI/SwiftData ([Callback](https://github.com/chiliec/Callback))."
+          - "Took four apps from idea to the App Store in ten weeks — three on Kotlin Multiplatform/Compose for iOS and Android ([BaliSurf](https://github.com/chiliec/balisurf), [SLOVO](https://github.com/chiliec/slovo), [Lancar](https://github.com/chiliec/indonesian-app)), one pure SwiftUI/SwiftData ([Callback](https://github.com/chiliec/Callback))."
           - "[TalkNative](https://github.com/chiliec/TalkNative) — on-device iOS text enhancer on Apple Foundation Models, four Swift packages each with its own tests; [ClaudeBar](https://github.com/chiliec/ClaudeBar) — native macOS menu-bar app, signed, notarized, shipped via Homebrew."
           - "Build the agent context layer — conventions, review protocol, session memory ([obsidian-memory](https://github.com/chiliec/obsidian-memory))."
 

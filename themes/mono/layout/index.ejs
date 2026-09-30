@@ -40,7 +40,7 @@
 </section>
 
 <section class="home-section" aria-labelledby="writing-title">
-  <div class="section-mark"><span>02 / Writing</span><span>mostly in Russian</span></div>
+  <div class="section-mark"><span>02 / Writing</span><span><%= site.posts.length %> posts</span></div>
   <h2 id="writing-title" class="display section-title" data-split>Notes from the work.</h2>
   <ul class="post-list" data-stagger>
     <% site.posts.sort('date', -1).each(function (post) { %>
